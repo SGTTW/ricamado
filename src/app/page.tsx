@@ -6,7 +6,7 @@
 
 
 
-import HomePage from "./(main)/page";
+import HomePage from "./main/page";
 
 
 export default function Home() {
