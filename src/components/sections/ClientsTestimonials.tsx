@@ -1,104 +1,150 @@
-// src/components/sections/ClientTestimonials.tsx
-'use client';
+ 
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Quote, UserCircle2 } from 'lucide-react';
+"use client";
 
-interface Testimonial {
-  id: string;
-  name: string;
-  role: string;
-  quote: string;
-  transformation: string;
-}
+// import { useEffect, useState } from 'react';
+// import { Testimonial } from '@/types/index';
+import { testimonials } from "@/lib/testimonials";
 
-const testimonials: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Adebayo Okonkwo',
-    role: 'Tech Entrepreneur',
-    quote: "Ricamado didn't just find me a property; they helped me design a space that fuels my creativity and aligns with my professional growth.",
-    transformation: 'Transformed a traditional apartment into a dynamic work-life integration hub'
-  },
-  {
-    id: '2',
-    name: 'Chioma Nnadi',
-    role: 'Social Impact Consultant',
-    quote: "My home is now more than a living space—it's a reflection of my values and a platform for community connection.",
-    transformation: 'Created a collaborative living environment supporting local initiatives'
-  },
-  {
-    id: '3',
-    name: 'Michael Chukwuma',
-    role: 'Sustainable Developer',
-    quote: "Finding a property that matches my environmental ethics was crucial. Ricamado understood that perfectly.",
-    transformation: 'Transitioned to a zero-waste, energy-efficient living space'
-  }
-];
-
-const ClientTestimonials = () => {
-  const [activeTestimonial, setActiveTestimonial] = useState(testimonials[0]);
+export default function ClientTestimonials() {
+  // Duplicate testimonials to create infinite scroll effect
+  const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Transformative Journeys
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real stories of how purposeful spaces catalyze personal and professional growth.
-          </p>
+    <section className="mx-auto overflow-hidden relative bg-white py-16">
+      <div className="container max-w-7xl mx-auto px-6">
+        <div className="flex justify-center items-center mb-8">
+          <div>
+            <h2 className="text-4xl md:text-4xl mb-4 text-gray-800 text-center font-bold ">
+              What Our Clients Are Saying
+            </h2>
+            {/* rating */}
+            {/* <div className="bg-[#3d3d3d] text-sm font-normal text-white w-fit mx-auto px-4 rounded-full flex justify-center items-center py-1"> */}
+            <div className="bg-[#3d3d3d] text-sm font-normal text-white w-fit mx-auto px-4 rounded-full flex justify-center items-center py-1">
+              <div className="bg-white mr-2.5 rounded-full p-1">
+                <svg
+                  className="w-6 h-6 text-[#3d3d3d]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  />
+                </svg>
+              </div>
+              Rated 4.8/5 by over 1k+ clients nationwide
+            </div>
+
+          </div>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-center">
-          <div className="w-full md:w-1/2">
-            <AnimatePresence>
-              <motion.div
-                key={activeTestimonial.id}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.3 }}
-                className="bg-gray-100 p-6 rounded-lg shadow-lg"
+
+        {/* Top Row - Moving Left to Right */}
+        <div
+          className="relative w-[300%] my-16"
+          style={{
+            animation: "moveLeftToRight 60s linear infinite",
+          }}
+        >
+          <div className="flex">
+            {duplicatedTestimonials.map((item, index) => (
+              <div
+                key={`top-${index}`}
+                className="w-[350px] min-h-[250px] mx-4 rounded-2xl flex-shrink-0 overflow-hidden shadow-md bg-white p-6 relative flex flex-col"
               >
-                <p className="text-lg italic text-gray-700 mb-4">
-                  <Quote className="inline-block mr-2" />
-                  {activeTestimonial.quote}
-                </p>
-                <p className="text-sm text-gray-500 mb-2">
-                  {activeTestimonial.transformation}
-                </p>
-                <div className="flex items-center mt-4">
-                  <UserCircle2 className="h-10 w-10 text-blue-600" />
-                  <div className="ml-4">
-                    <h3 className="text-lg font-semibold text-gray-800">{activeTestimonial.name}</h3>
-                    <p className="text-sm text-gray-500">{activeTestimonial.role}</p>
+                <div className="absolute top-4 text-gray-200">
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                </div>
+
+                <p className="flex-1 mt-6 mb-6 text-[#6D6D6D]">{item.text}</p>
+
+                <div className="flex items-center mt-auto">
+                  <div className="w-10 h-10 rounded-full mr-3 bg-gray-200"></div>
+                  <div>
+                    <p className="font-semibold text-sm text-[#6D6D6D]">
+                      {item.name}
+                    </p>
+                    <p className="text-sm text-[#6D6D6D]">{item.title}</p>
                   </div>
                 </div>
-              </motion.div>
-            </AnimatePresence>
+              </div>
+            ))}
           </div>
+        </div>
 
-          <div className="mt-8 md:mt-0 md:ml-8 w-full md:w-1/2">
-            <ul className="space-y-4">
-              {testimonials.map((testimonial) => (
-                <li
-                  key={testimonial.id}
-                  onClick={() => setActiveTestimonial(testimonial)}
-                  className={`cursor-pointer p-4 rounded-lg shadow-md transition-transform transform ${
-                    activeTestimonial.id === testimonial.id ? 'bg-blue-100' : 'bg-white'
-                  }`}
+        {/* Bottom Row - Moving Right to Left */}
+        <div
+          className="relative w-[300%]"
+          style={{
+            animation: "moveRightToLeft 60s linear infinite",
+          }}
+        >
+          <div className="flex">
+            {duplicatedTestimonials
+              .slice()
+              .reverse()
+              .map((item, index) => (
+                <div
+                  key={`bottom-${index}`}
+                  className="w-[350px] min-h-[250px] mx-4 rounded-2xl flex-shrink-0 overflow-hidden shadow-md bg-white p-6 relative flex flex-col"
                 >
-                  <h3 className="text-lg font-semibold text-gray-800">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
-                </li>
+                  <div className="absolute top-4 text-gray-200">
+                    <svg
+                      className="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                    </svg>
+                  </div>
+
+                  <p className="flex-1 mt-6 mb-6 text-[#6D6D6D]">{item.text}</p>
+
+                  <div className="flex items-center mt-auto">
+                    <div className="w-10 h-10 rounded-full mr-3 bg-gray-200"></div>
+                    <div>
+                      <p className="font-semibold text-sm text-[#6D6D6D]">
+                        {item.name}
+                      </p>
+                      <p className="text-sm text-[#6D6D6D]">{item.title}</p>
+                    </div>
+                  </div>
+                </div>
               ))}
-            </ul>
-          </div>    
+          </div>
         </div>
       </div>
+
+      {/* Add the animation keyframes using style tag */}
+      <style jsx>{`
+        @keyframes moveLeftToRight {
+          from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0%);
+          }
+        }
+
+        @keyframes moveRightToLeft {
+          from {
+            transform: translateX(0%);
+          }
+          to {
+            transform: translateX(-100%);
+          }
+        }
+      `}</style>
     </section>
   );
 }
-export default ClientTestimonials;

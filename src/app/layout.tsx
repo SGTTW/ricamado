@@ -6,6 +6,7 @@ import "@/app/globals.css";
 import NavbarWrapper from "@/components/common/NavbarWrapper";
 import FooterWrapper from "@/components/common/FooterWrapper";
 import ScrollButton from "@/components/common/ScrollButton";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: {
@@ -27,6 +28,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <ScrollButton />
         <FooterWrapper />
+        <Toaster position="top-right" theme="light" />
       </body>
     </html>
   );

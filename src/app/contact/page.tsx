@@ -1,12 +1,12 @@
+// src/app/contact/page.tsx
 import Container from "@/components/common/Container";
-
+import ContactForm from "@/components/contact/ContactForm";
+import ContactHero from "@/components/contact/ContactHero";
 export default function ContactPage() {
   return (
     <Container>
-      <div className="py-12">
-        <h1 className="text-4xl font-bold text-center mb-12">Contact Page</h1>
-        {/* <TestimonialsSection testimonials={testimonials} /> */}
-      </div>
+      <ContactHero />
+      <ContactForm />
     </Container>
   );
 }
