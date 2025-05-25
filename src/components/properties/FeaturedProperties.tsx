@@ -233,7 +233,7 @@ const FeaturedProperties = () => {
             onMouseLeave={() => setHoveredViewMore(false)}
           >
             View More Properties
-            {hoveredViewMore && <ArrowRight className="ml-2 mb-1" size={20} />}
+            {hoveredViewMore && <ArrowRight className="ml-2 " size={20} />}
           </Link>
         </div>
       </div>

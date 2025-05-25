@@ -1,6 +1,8 @@
 // src/components/common/Footer.tsx
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import { toast } from "sonner";
 
 import {
   Facebook,
@@ -15,22 +17,22 @@ import {
 const SOCIAL_LINKS = [
   {
     icon: Facebook,
-    href: "https://facebook.com/ricamado",
+    href: "https://www.facebook.com/61574643453053/",
     label: "Facebook",
   },
   {
     icon: Twitter,
-    href: "https://twitter.com/ricamado",
+    href: "https://x.com/RicamadoUL",
     label: "Twitter",
   },
   {
     icon: Instagram,
-    href: "https://instagram.com/ricamado",
+    href: "#",
     label: "Instagram",
   },
   {
     icon: Linkedin,
-    href: "https://linkedin.com/company/ricamado",
+    href: "#",
     label: "LinkedIn",
   },
 ];
@@ -48,6 +50,69 @@ const FOOTER_LINKS = {
 };
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const [isSubscribing, setIsSubscribing] = useState(false);
+  const [subscribedEmails, setSubscribedEmails] = useState<string[]>([]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("subscribedEmails");
+    if (stored) {
+      setSubscribedEmails(JSON.parse(stored));
+    }
+  }, []);
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Check if email already subscribed locally
+    if (subscribedEmails.includes(email.toLowerCase())) {
+      toast.error("This email is already subscribed to our newsletter.", {
+        position: "top-right",
+        duration: 5000,
+      });
+      return;
+    }
+
+    setIsSubscribing(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mblglrkq", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          type: "newsletter_subscription",
+        }),
+      });
+
+      if (response.ok) {
+        // Add email to subscribed list and save to localStorage
+        const newSubscribedEmails = [...subscribedEmails, email.toLowerCase()];
+        setSubscribedEmails(newSubscribedEmails);
+        localStorage.setItem(
+          "subscribedEmails",
+          JSON.stringify(newSubscribedEmails)
+        );
+
+        setEmail("");
+        toast.success("Successfully subscribed to our newsletter!", {
+          position: "top-right",
+          duration: 5000,
+        });
+      } else {
+        toast.error("Something went wrong. Please try again.", {
+          position: "top-right",
+          duration: 5000,
+        });
+      }
+    } catch {
+      toast.error("Network error. Please check your connection.", {
+        position: "top-right",
+        duration: 5000,
+      });
+    } finally {
+      setIsSubscribing(false);
+    }
+  };
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
@@ -118,16 +183,23 @@ export default function Footer() {
               <p className="text-gray-300 mb-2">
                 Join our community of purposeful living
               </p>
-              <div className="flex">
+              <form onSubmit={handleSubscribe} className="flex">
                 <input
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email"
                   className="w-full px-3 py-2 mr-1 outline-none rounded-l-md bg-gray-800 text-white"
+                  required
                 />
-                <button className="bg-blue-600 px-4 rounded-r-md hover:bg-blue-700">
-                  Subscribe
+                <button
+                  type="submit"
+                  disabled={isSubscribing}
+                  className="bg-blue-600 px-4 rounded-r-md hover:bg-blue-700 disabled:opacity-50"
+                >
+                  {isSubscribing ? "..." : "Subscribe"}
                 </button>
-              </div>
+              </form>
             </div>
 
             {/* Social Links */}
