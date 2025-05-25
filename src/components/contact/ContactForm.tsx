@@ -14,12 +14,7 @@ export default function ContactForm() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const [submitStatus, setSubmitStatus] = useState<{
-    success?: boolean;
-    message?: string;
-  }>({});
+  // Removed unused isOpen and setSubmitStatus variables
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -45,7 +40,7 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        setIsOpen(false);
+        // Removed setIsOpen(false) since isOpen is no longer used
         setFormData({
           name: "",
           email: "",
@@ -83,17 +78,7 @@ export default function ContactForm() {
           Send Us a Message
         </h2>
 
-        {submitStatus.message && (
-          <div
-            className={`mb-6 p-4 rounded-md ${
-              submitStatus.success
-                ? "bg-green-50 text-green-800 border border-green-200"
-                : "bg-red-50 text-red-800 border border-red-200"
-            }`}
-          >
-            {submitStatus.message}
-          </div>
-        )}
+        {/* Removed submitStatus conditional rendering since it's no longer used */}
 
         <form onSubmit={handleSubmit}>
           <div className="space-y-5">
