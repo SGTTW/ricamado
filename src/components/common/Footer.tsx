@@ -46,6 +46,7 @@ const FOOTER_LINKS = {
   Support: [
     { label: "Contact Us", href: "/contacts" },
     { label: "Terms of Service", href: "/terms" },
+    { label: "Privacy Policy", href: "/privacy" },
   ],
 };
 
@@ -142,7 +143,7 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-blue-500" />
-                <span>adeniyimargareta@gmail.com</span>
+                <span>info@ricamado.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-5 h-5 text-blue-500" />
