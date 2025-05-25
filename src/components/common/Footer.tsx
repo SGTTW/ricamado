@@ -27,7 +27,7 @@ const SOCIAL_LINKS = [
   },
   {
     icon: Instagram,
-    href: "#",
+    href: "/",
     label: "Instagram",
   },
   {
