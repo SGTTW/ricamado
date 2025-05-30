@@ -40,13 +40,13 @@ interface Property {
 const featuredProperties: Property[] = [
   {
     id: "123e4567-e89b-12d3-a456-426614174000",
-    title: "Eco-Conscious Urban Loft",
-    location: "Lagos, Nigeria",
-    price: 450000,
+    title: "Government Quarters",
+    location: "Abuja, Nigeria",
+    price: 200000000,
     image: "/images/properties/kuje_abuja/kuje_house_1.jpg",
     tags: ["Sale", "Just In"],
     purposeAlignment:
-      "Designed for professionals committed to environmental stewardship and personal well-being.",
+      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
   },
   {
     id: "community-haven-2",
@@ -375,7 +375,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* Price and Details - Always visible */}
         <div className="flex justify-between items-center">
           <span className="text-xl font-bold text-blue-600">
-            ${property.price.toLocaleString()}
+            #{property.price.toLocaleString()}
           </span>
           <Link
             href={`/properties/${property.id}`}

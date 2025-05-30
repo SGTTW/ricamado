@@ -33,6 +33,11 @@ export default function AboutContent() {
                 needs of our clients but anticipate future trends and lifestyle
                 requirements.
               </p>
+              {/* add rc number */}
+              <p className="text-gray-700 mt-4">
+                Ricamado Unique Limited is registered with the Corporate Affairs
+                Commission (CAC) of Nigeria, RC Number: 1890684.
+              </p>
             </div>
             <div className="md:w-1/2 relative h-64 md:h-80 w-full rounded-lg overflow-hidden">
               <Image

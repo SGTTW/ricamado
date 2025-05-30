@@ -14,6 +14,36 @@ export const metadata: Metadata = {
     default: "Ricamado - Transform Your Living Space",
   },
   description: "Discover living spaces that inspire and transform your life.",
+
+  keywords: [
+    "Ricamado",
+    "Real Estate in Lagos",
+    "Affordable Homes Nigeria",
+    "Buy Property in Nigeria",
+    "Real Estate Developer Ogba",
+    "Luxury Apartments",
+    "Houses for sale in Lagos",
+  ],
+    openGraph: {
+    title: "Ricamado - Transform Your Living Space",
+    description: "Discover living spaces that inspire and transform your life.",
+    url: "https://ricamado.com.ng",
+    siteName: "Ricamado",
+    images: [
+      {
+        url: "https://ricamado.com.ng/og_image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Ricamado Real Estate",
+      },
+    ],
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
 };
 
 export default function RootLayout({

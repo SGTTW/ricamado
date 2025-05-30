@@ -1,6 +1,6 @@
 export const achievements = [
-  { value: "50+", label: "Projects Completed" },
-  { value: "18", label: "Years of Excellence" },
-  { value: "12", label: "Industry Awards" },
-  { value: "1000+", label: "Happy Clients" }
+  { value: "1K+", label: "Properties Sold" },
+  { value: "4+", label: "Years of Excellence" },
+  { value: "25+", label: "Expert Agents" },
+  { value: "80%", label: "Happy Clients" },
 ];
