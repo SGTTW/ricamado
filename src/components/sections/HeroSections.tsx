@@ -77,14 +77,14 @@ const HeroSection = () => {
           </div> */}
 
           <div className="w-full max-w-2xl mx-auto mb-8">
-            <PropertySearch  variant="hero"/>
+            <PropertySearch variant="hero" />
           </div>
 
           {/* Call to Action */}
           <div className="mt-10 flex justify-center space-x-4">
             <Link
               href="/properties"
-              className="px-8 py-3 bg-white text-blue-900 font-semibold rounded-full hover:bg-blue-50 transition"
+              className="px-8 py-3 bg-white text-blue-900 font-semibold rounded-full hover:bg-blue-50 transition outline-none"
             >
               Explore Spaces
             </Link>

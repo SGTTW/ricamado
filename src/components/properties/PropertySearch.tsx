@@ -120,9 +120,10 @@ const PropertySearch = ({
         variant === "default"
           ? {
               backgroundImage:
-                "url('/images/properties/properties/premium_photo-1689609950112-d66095626efb.avif')",
+              "url('/images/properties/properties/premium_photo-1689609950112-d66095626efb.avif')",
               // backdropFilter: "blur(4px)",
-              // backgroundColor: "rgba(255, 255, 255, 0.1)",
+              // backgroundColor: "rgba(255, 255, 255, 0.1)"
+              // backgroundColor: "gray-100",
             }
           : {}
       }
@@ -223,8 +224,8 @@ const PropertySearch = ({
                 No properties found for &quot;{searchTerm}&quot;
               </p>
               <p className="text-gray-600 text-sm mb-4">
-                We couldn&apos;t find any matches. Would you like us to help you find
-                what you&apos;re looking for?
+                We couldn&apos;t find any matches. Would you like us to help you
+                find what you&apos;re looking for?
               </p>
               <ContactAgentModal propertyTitle={searchTerm}>
                 <button className="w-full bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded-md">

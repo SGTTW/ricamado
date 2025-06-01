@@ -1,5 +1,3 @@
- 
-
 "use client";
 
 // import { useEffect, useState } from 'react';
@@ -19,7 +17,6 @@ export default function ClientTestimonials() {
               What Our Clients Are Saying
             </h2>
             {/* rating */}
-            {/* <div className="bg-[#3d3d3d] text-sm font-normal text-white w-fit mx-auto px-4 rounded-full flex justify-center items-center py-1"> */}
             <div className="bg-[#3d3d3d] text-sm font-normal text-white w-fit mx-auto px-4 rounded-full flex justify-center items-center py-1">
               <div className="bg-white mr-2.5 rounded-full p-1">
                 <svg
@@ -39,7 +36,6 @@ export default function ClientTestimonials() {
               </div>
               Rated 4.8/5 by over 1k+ clients nationwide
             </div>
-
           </div>
         </div>
 

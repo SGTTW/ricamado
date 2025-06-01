@@ -4,7 +4,7 @@ import { Testimonial } from "@/types/index";
 export const testimonials: Testimonial[] = [
   {
     text: "Their expertise in the Lagos property market helped us find our dream home in Lekki. The team guided us through every step of the process with professionalism and dedication.",
-    name: "Ololade Adeniyi",
+    name: "Rich Ololade ",
     title: "Homeowner, Lekki Phase 1",
   },
   {

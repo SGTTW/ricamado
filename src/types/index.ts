@@ -1,4 +1,19 @@
 // src/types/index.ts
+
+// export type PropertyTag = "for-sale" | "for-rent" | "sold";
+
+export type PropertyTag =
+  | "Sustainable"
+  | "Community-Focused"
+  | "Wellness"
+  | "Just In"
+  | "Sale"
+  | "Rent"
+  | "Luxury"
+  | "Affordable"
+  | "Investment"
+  | "Innovation";
+
 export interface Property {
   askingPrice?: string[];
   description: string;
@@ -8,13 +23,15 @@ export interface Property {
   image: string;
   images: string[];
   label: string;
-  landSize?: string[];
+  landSize?: string;
   location: string;
   price: string;
-  purposeAlignments?: string[];
+  amenities?: string[];
   reasonForSale?: string;
   title: string;
   videos?: string[];
+  tags: PropertyTag[];
+  
 }
 
 export interface Testimonial {

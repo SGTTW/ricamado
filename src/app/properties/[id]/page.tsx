@@ -391,6 +391,20 @@ export default function PropertyDetailsPage({
                     <p className="text-gray-600">{property.reasonForSale}</p>
                   </div>
                 )}
+
+                {property.amenities && property.amenities.length > 0 && (
+                  <div className="mb-8">
+                    <h2 className="text-xl font-bold mb-3">Amenities</h2>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                      {property.amenities?.map((amenity, index) => (
+                        <p key={index} className="text-gray-600">
+                          • {amenity}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                
               </div>
 
               <div className="md:col-span-1">

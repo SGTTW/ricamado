@@ -2,11 +2,12 @@
 import { Property } from "@/types/index";
 
 const properties: Property[] = [
+  // Kuje abuja
   {
     id: "123e4567-e89b-12d3-a456-426614174000",
     title: "Government Quarters",
     location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
+    price: "₦200,000,000",
     description:
       "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
     features: [
@@ -16,535 +17,449 @@ const properties: Property[] = [
       "Government approved",
       "Secure location",
     ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/Screenshot_1.png",
-
-      "/images/properties/akowonjo/Screenshot_1.png",
-    ],
+    image: "/images/properties/kuje_abuja/kuje_house_1.jpg",
+    images: ["/images/properties/kuje_abuja/kuje_house_1.jpg"],
     videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+      "/images/properties/kuje_abuja/kuje_house_2.mp4",
+      "/images/properties/kuje_abuja/kuje_house_video.mp4",
     ],
     label: "SALE",
-    purposeAlignments: [
+    amenities: [
       "Ideal for government officials and civil servants",
       "Strategic location within Abuja",
       "Investment opportunity with growth potential",
     ],
     reasonForSale: "Government divestment of non-essential assets",
     askingPrice: ["₦200,000,000"],
+    tags: ["Just In", "Sale"],
   },
 
-
-
+  // Fagba, Iju, Lagos
   {
     id: "f7a9b3e2-1d5c-4e6f-9a2b-3c4d5e6f7g8h9",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
+    title: "3 bedroom duplex",
+    location: "Iju, Lagos",
+    price: "₦220,000,000",
+    landSize: "Half plots of land (290 square km)",
     description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+      "Beautiful 3-bedroom apartment available for rent. Enjoy the convenience of city living with all modern comforts and amenities.",
     features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
+      " Luxuriously finished   ",
+      " Executive POP",
+      " Smart home",
+      " Infrared steps light",
+      " Stamped floors",
+      " Standard kitchen",
+      " Jaccuzi, Cubicle,",
+      " Integrated audios systems ",
+      " Parking space of 3Cars",
+      " Good Neighborhood",
+      " Secured Estate",
+      " Proximity& Accessible",
+      " Few minutes drive to Ikeja Airport",
     ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
+    image:
+      "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.12_3c3b30f4.jpg",
     images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
+      "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.14_bd10015a.jpg",
+      "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.16_7efe6464.jpg",
+      "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.12_3c3b30f4.jpg",
+      "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.12_a51050c0.jpg",
+      "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.13_35ec4c87.jpg",
+      "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.15_9754264f.jpg",
     ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
-    label: "SALE",
-    purposeAlignments: [
+    videos: [],
+    label: "",
+    amenities: [
       "Ideal for government officials and civil servants",
       "Strategic location within Abuja",
       "Investment opportunity with growth potential",
     ],
-    reasonForSale: "Government divestment of non-essential assets",
+     
     askingPrice: ["₦200,000,000"],
+    tags: ["Just In", "Sale"],
+    documents: ["C of O (Certificate of Occupancy)"],
   },
 
-
-
+  // Ifako/Ijaiye, Lagos
   {
     id: "124e4567-e89b-12d3-a456-426614174000",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
+    title: "3 Bedroom Apartment",
+    location: "Ifako/Ijaiye, Lagos",
+    price: "₦120,000,000",
     description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+      "VACANT – PAY AND PARK IN 💥 DIRECT BRIEF 💥 Owner Alive | Just Repainted Magnificently built 5-bedroom duplex in a serene estate beside Kayfarm Estate, Obawole, Ogba, Ifako-Ijaiye LGA, Lagos",
     features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
+      "Two sitting rooms & a waiting room",
+      " Fully tiled with POP finishing",
+      "   Fully equipped large kitchen",
+      " Study room & separate mini flat",
+      " Spacious parking for up to 8 cars",
+      "Fully interlocked compound",
+      " 24-hour electricity & estate mobile security",
     ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
+    image:
+      "/images/properties//ifako_ijaiye/WhatsApp Image 2025-03-13 at 21.48.00_cd8d2453.jpg",
     images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
+      "/images/properties/ifako_ijaiye/WhatsApp Image 2025-03-13 at 21.48.00_cd8d2453.jpg",
+      "/images/properties/ifako_ijaiye/WhatsApp Image 2025-03-13 at 21.48.03_ea1a15c9.jpg",
+      "/images/properties/ifako_ijaiye/WhatsApp Image 2025-03-13 at 21.48.05_a93c8558.jpg",
+      "/images/properties/ifako_ijaiye/WhatsApp Image 2025-03-13 at 21.48.04_093473b4.jpg",
     ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
+    videos: [],
     label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
+    amenities: [],
+    reasonForSale: "Owner relocating",
+    askingPrice: ["₦120,000,000 (One Hundred and Twenty Million Naira)"],
+    tags: ["Just In", "Sale"],
+    documents: ["Global C of O, R&S"],
   },
 
-
-
-
+  // Shopping Complex, Abule Egba, Lagos
   {
     id: "ed5c10c416-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
+    title: "SHOPPING COMPLEX",
+    location: "Charty RD.,Abule Egba, Lagos",
+    price: "₦400,000,000",
     description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+      "A solid modern 2-storey shopping complex with several big shops and offices situated on 3½ plots of land on a very busy junction at Charity Road, New Oko-Oba. Located close to popular establishments like Chicken Republic, Domino's Pizza, and UBA Bank. Perfect for commercial ventures including schools, hotels, eateries, banks, churches, warehouses, or offices. The property has a Certificate of Occupancy (C of O).",
     features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
+      "2-Storey Building",
+      "Multiple Shops & Offices",
+      "3½ Plots of Land",
+      "Certificate of Occupancy",
+      "Junction Property",
+      "Commercial Zoning",
+      "Prime Location",
+      "High Traffic Area",
+      "Corner Plot",
+      "Near Major Establishments",
     ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
+    image:
+      "/images/properties/shopping_complex_abule_egba/shoppingComplexAtAbuleEgba.jpg",
     images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
+      "/images/properties/shopping_complex_abule_egba/shoppingComplexAtAbuleEgba.jpg",
+      "/images/properties/shopping_complex_abule_egba/0034.jpg",
     ],
     videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+      "/images/properties/shopping_complex_abule_egba/shoppingComplexAtAbuleEgba.mp4",
     ],
     label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
+    documents: ["Certificate of Occupancy (C of O)"],
+
+    askingPrice: ["₦400,000,000 (Four Hundred Million Naira)"],
+    tags: ["Just In", "Sale"],
+    landSize: "3½ Plots of Land",
   },
 
-
-
-
-
+  // 3 Bedroom Flats, Akowonjo, Lagos
   {
     id: "ed57c0c16-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
+    title: "3 Bedroom Flats",
+    location: "Akowonjo Rd by Adeoti Street, Egbeda, Lagos",
+    price: "₦400,000,000 net",
     description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+      "A prime investment property featuring 6 units of 3-bedroom flats and a floor with 12 shops at the front. Located in a strategic commercial area of Egbeda, Lagos.",
     features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
+      "6 Units of 3-Bedroom Flats",
+      "1 Floor with 12 Shops",
+      "900+ sqm Land Size",
+      "Well-Structured Building",
+      "Good Rental Value",
+      "Secure Environment",
+      "Ample Parking Space",
+      "Proximity to Major Roads",
     ],
     image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
+    images: ["/images/properties/akowonjo/Screenshot_1.png"],
     videos: [
       "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
     ],
+    documents: ["Certificate of Occupancy (C of O)"],
     label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
+
+    askingPrice: ["₦400,000,000 (Four Hundred Million Naira) (net)"],
+    tags: ["Rent"],
+    landSize: "900+ square meters",
   },
 
-
-
-
-
-
-
-  
+  // Single Room Self-Contain, Tekobo, Abeokuta
   {
     id: "ed5c00c16-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
+    title: "Single Room Self-Contain",
+    location: "Tekobo, Idi-Aba Abeokuta, Ogun State",
+    price: "₦200,000 (Negotiable)",
     description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-    features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
-    ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
+      "Single room self-contain available for rent in Tekobo, Idi-Aba Abeokuta, Ogun State. The room is spacious and well-maintained, ideal for individuals or couples.",
+    features: ["Running Water", "Electricity", "Fencing"],
+    image: "/images/properties//yah_lateef/Screenshot_2.png",
+    images: ["/images/properties/yah_lateef/Screenshot_2.png"],
     videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+      "/images/properties/yah_lateef/WhatsApp Video 2025-03-18 at 17.46.29_f3045936.mp4",
     ],
-    label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
+    label: "",
+    askingPrice: ["₦200,000 (Two Hundred Thousand Naira) (Negotiable)"],
+    tags: ["Just In", "Rent"],
   },
 
-
-
-
-
-
-
-
-
-
-
-
-  {
-    id: "ed5c09c16-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
-    description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-    features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
-    ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
-    label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
-  },
-
-
-
-
-
-
-
-
-
-
-
-  {
-    id: "ed5c0c716-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
-    description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-    features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
-    ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
-    label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
-  },
-
-
-
-
-
-
-
-
-
-
-  {
-    id: "ed5c30c16-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
-    description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-    features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
-    ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
-    label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
-  },
-
-
-
-
-
-
-
-
-
-
-  {
-    id: "ed5c10c16-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
-    description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-    features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
-    ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
-    label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
-  },
-
-
-
-
-
-
-
-
-
-
-  {
-    id: "ed5c01c16-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
-    description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-    features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
-    ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
-    label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
-  },
-
-
-
-
-
-
-
-
-
-
-
-  {
-    id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
-    description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-    features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
-    ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
-    label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
-  },
-
-
-
-
-
-
-
-
-
-
-
-
-  {
-    id: "ed15c0c16-0fca-48c7-8fcc-08a39f60c4ee",
-    title: "Government Quarters",
-    location: "Kuje, Abuja",
-    price: "₦200,000,000 (Negotiable)",
-    description:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-    features: [
-      "Located in Kuje Area Council",
-      "Bidding starts at ₦200M",
-      "Negotiable price",
-      "Government approved",
-      "Secure location",
-    ],
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    images: [
-      "/images/properties/akowonjo/Screenshot_1.png",
-      "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-      "/images/properties/akonwonjo/government-quarters/interior.jpg",
-    ],
-    videos: [
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-      "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-    ],
-    label: "SALE",
-    purposeAlignments: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
-    ],
-    reasonForSale: "Government divestment of non-essential assets",
-    askingPrice: ["₦200,000,000"],
-  },
-
-
+  // {
+  //   id: "ed5c09c16-0fca-48c7-8fcc-08a39f60c4ee",
+  //   title: "Government Quarters",
+  //   location: "Kuje, Abuja",
+  //   price: "₦200,000,000 (Negotiable)",
+  //   description:
+  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+  //   features: [
+  //     "Located in Kuje Area Council",
+  //     "Bidding starts at ₦200M",
+  //     "Negotiable price",
+  //     "Government approved",
+  //     "Secure location",
+  //   ],
+  //   image: "/images/properties/akowonjo/Screenshot_1.png",
+  //   images: [
+  //     "/images/properties/akowonjo/Screenshot_1.png",
+  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
+
+  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
+  //   ],
+  //   videos: [
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //   ],
+  //   label: "SALE",
+  //   amenities: [
+  //     "Ideal for government officials and civil servants",
+  //     "Strategic location within Abuja",
+  //     "Investment opportunity with growth potential",
+  //   ],
+  //   reasonForSale: "Government divestment of non-essential assets",
+  //   askingPrice: ["₦200,000,000"],
+  //   tags: ["Sale", "Just In"],
+  // },
+
+  // {
+  //   id: "ed5c0c716-0fca-48c7-8fcc-08a39f60c4ee",
+  //   title: "Government Quarters",
+  //   location: "Kuje, Abuja",
+  //   price: "₦200,000,000 (Negotiable)",
+  //   description:
+  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+  //   features: [
+  //     "Located in Kuje Area Council",
+  //     "Bidding starts at ₦200M",
+  //     "Negotiable price",
+  //     "Government approved",
+  //     "Secure location",
+  //   ],
+  //   image: "/images/properties/akowonjo/Screenshot_1.png",
+  //   images: [
+  //     "/images/properties/akowonjo/Screenshot_1.png",
+  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
+
+  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
+  //   ],
+  //   videos: [
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //   ],
+  //   label: "SALE",
+  //   amenities: [
+  //     "Ideal for government officials and civil servants",
+  //     "Strategic location within Abuja",
+  //     "Investment opportunity with growth potential",
+  //   ],
+  //   reasonForSale: "Government divestment of non-essential assets",
+  //   askingPrice: ["₦200,000,000"],
+  //   tags: ["Sale", "Just In"],
+  // },
+
+  // {
+  //   id: "ed5c30c16-0fca-48c7-8fcc-08a39f60c4ee",
+  //   title: "Government Quarters",
+  //   location: "Kuje, Abuja",
+  //   price: "₦200,000,000 (Negotiable)",
+  //   description:
+  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+  //   features: [
+  //     "Located in Kuje Area Council",
+  //     "Bidding starts at ₦200M",
+  //     "Negotiable price",
+  //     "Government approved",
+  //     "Secure location",
+  //   ],
+  //   image: "/images/properties/akowonjo/Screenshot_1.png",
+  //   images: [
+  //     "/images/properties/akowonjo/Screenshot_1.png",
+  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
+
+  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
+  //   ],
+  //   videos: [
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //   ],
+  //   label: "SALE",
+  //   amenities: [
+  //     "Ideal for government officials and civil servants",
+  //     "Strategic location within Abuja",
+  //     "Investment opportunity with growth potential",
+  //   ],
+  //   reasonForSale: "Government divestment of non-essential assets",
+  //   askingPrice: ["₦200,000,000"],
+
+  //   tags: ["Sale", "Just In"],
+  // },
+
+  // {
+  //   id: "ed5c10c16-0fca-48c7-8fcc-08a39f60c4ee",
+  //   title: "Government Quarters",
+  //   location: "Kuje, Abuja",
+  //   price: "₦200,000,000 (Negotiable)",
+  //   description:
+  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+  //   features: [
+  //     "Located in Kuje Area Council",
+  //     "Bidding starts at ₦200M",
+  //     "Negotiable price",
+  //     "Government approved",
+  //     "Secure location",
+  //   ],
+  //   image: "/images/properties/akowonjo/Screenshot_1.png",
+  //   images: [
+  //     "/images/properties/akowonjo/Screenshot_1.png",
+  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
+
+  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
+  //   ],
+  //   videos: [
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //   ],
+  //   label: "SALE",
+  //   amenities: [
+  //     "Ideal for government officials and civil servants",
+  //     "Strategic location within Abuja",
+  //     "Investment opportunity with growth potential",
+  //   ],
+  //   reasonForSale: "Government divestment of non-essential assets",
+  //   askingPrice: ["₦200,000,000"],
+  //   tags: ["Sale", "Just In"],
+  // },
+
+  // {
+  //   id: "ed5c01c16-0fca-48c7-8fcc-08a39f60c4ee",
+  //   title: "Government Quarters",
+  //   location: "Kuje, Abuja",
+  //   price: "₦200,000,000 (Negotiable)",
+  //   description:
+  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+  //   features: [
+  //     "Located in Kuje Area Council",
+  //     "Bidding starts at ₦200M",
+  //     "Negotiable price",
+  //     "Government approved",
+  //     "Secure location",
+  //   ],
+  //   image: "/images/properties/akowonjo/Screenshot_1.png",
+  //   images: [
+  //     "/images/properties/akowonjo/Screenshot_1.png",
+  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
+
+  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
+  //   ],
+  //   videos: [
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //   ],
+  //   label: "SALE",
+  //   amenities: [
+  //     "Ideal for government officials and civil servants",
+  //     "Strategic location within Abuja",
+  //     "Investment opportunity with growth potential",
+  //   ],
+  //   reasonForSale: "Government divestment of non-essential assets",
+  //   askingPrice: ["₦200,000,000"],
+
+  //   tags: ["Sale", "Just In"],
+  // },
+
+  // {
+  //   id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c4ee",
+  //   title: "Government Quarters",
+  //   location: "Kuje, Abuja",
+  //   price: "₦200,000,000 (Negotiable)",
+  //   description:
+  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+  //   features: [
+  //     "Located in Kuje Area Council",
+  //     "Bidding starts at ₦200M",
+  //     "Negotiable price",
+  //     "Government approved",
+  //     "Secure location",
+  //   ],
+  //   image: "/images/properties/akowonjo/Screenshot_1.png",
+  //   images: [
+  //     "/images/properties/akowonjo/Screenshot_1.png",
+  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
+
+  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
+  //   ],
+  //   videos: [
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //   ],
+  //   label: "SALE",
+  //   amenities: [
+  //     "Ideal for government officials and civil servants",
+  //     "Strategic location within Abuja",
+  //     "Investment opportunity with growth potential",
+  //   ],
+  //   reasonForSale: "Government divestment of non-essential assets",
+  //   askingPrice: ["₦200,000,000"],
+
+  //   tags: ["Sale", "Just In"],
+  // },
+
+  // {
+  //   id: "ed15c0c16-0fca-48c7-8fcc-08a39f60c4ee",
+  //   title: "Government Quarters",
+  //   location: "Kuje, Abuja",
+  //   price: "₦200,000,000 (Negotiable)",
+  //   description:
+  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
+  //   features: [
+  //     "Located in Kuje Area Council",
+  //     "Bidding starts at ₦200M",
+  //     "Negotiable price",
+  //     "Government approved",
+  //     "Secure location",
+  //   ],
+  //   image: "/images/properties/akowonjo/Screenshot_1.png",
+  //   images: [
+  //     "/images/properties/akowonjo/Screenshot_1.png",
+  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
+
+  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
+  //   ],
+  //   videos: [
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
+  //   ],
+  //   label: "SALE",
+  //   amenities: [
+  //     "Ideal for government officials and civil servants",
+  //     "Strategic location within Abuja",
+  //     "Investment opportunity with growth potential",
+  //   ],
+  //   reasonForSale: "Government divestment of non-essential assets",
+  //   askingPrice: ["₦200,000,000"],
+
+  //   tags: ["Sale", "Just In"],
+
+  // },
+
+  // ---------------------------------------
   // {
   //   id: "eco-loft-lagos",
   //   title: "Eco-Conscious Urban Loft",

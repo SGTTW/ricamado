@@ -3,8 +3,6 @@
 
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
-// import { Property } from "@/types";
-// Import toast from sonner
 import { toast } from "sonner";
 
 interface ContactAgentModalProps {
@@ -32,7 +30,7 @@ const ContactAgentModal = ({
     if (isOpen && propertyTitle) {
       setFormData((prev) => ({
         ...prev,
-        message: `I'm interested in ${propertyTitle}. My requirements include:`,
+        message: `I'm interested in "${propertyTitle}". My requirements includes:`,
       }));
     }
   }, [isOpen, propertyTitle]);
@@ -108,7 +106,7 @@ const ContactAgentModal = ({
           duration: 4000,
         });
       }
-    } catch  {
+    } catch {
       // Add error toast for network issues
       toast.error("Network error. Please check your connection.", {
         position: "top-right",
@@ -166,8 +164,7 @@ const ContactAgentModal = ({
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
-                  // Improve text visibility with dark text color
-                  className={`w-full p-2 border rounded-md text-gray-900 ${
+                  className={`w-full p-2 border rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                     errors.fullName ? "border-red-500" : "border-gray-300"
                   }`}
                 />
@@ -185,8 +182,7 @@ const ContactAgentModal = ({
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  // Improve text visibility with dark text color
-                  className={`w-full p-2 border rounded-md text-gray-900 ${
+                  className={`w-full p-2 border rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                     errors.email ? "border-red-500" : "border-gray-300"
                   }`}
                 />
@@ -203,8 +199,7 @@ const ContactAgentModal = ({
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  // Improve text visibility with dark text color
-                  className={`w-full p-2 border rounded-md text-gray-900 ${
+                  className={`w-full p-2 border rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                     errors.phone ? "border-red-500" : "border-gray-300"
                   }`}
                 />
@@ -222,11 +217,15 @@ const ContactAgentModal = ({
                   value={formData.message}
                   onChange={handleChange}
                   rows={3}
-                  // Improve text visibility with dark text color
-                  className="w-full p-2 border border-gray-300 rounded-md text-gray-900"
+                  className="w-full p-2 border border-gray-300 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
+              <p className="text-xs text-start text-gray-500 mt-2">
+                By proceeding, you consent to receive calls and texts at the
+                number you provided from Ricamado and others about your inquiry,
+                but not as a condition of any purchase.
+              </p>
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -234,12 +233,6 @@ const ContactAgentModal = ({
               >
                 {isSubmitting ? "Sending..." : "Send"}
               </button>
-
-              <p className="text-xs text-gray-500 mt-2">
-                By proceeding, you consent to receive calls and texts at the
-                number you provided from Ricamado and others about your inquiry,
-                but not as a condition of any purchase.
-              </p>
             </form>
           </div>
         </div>

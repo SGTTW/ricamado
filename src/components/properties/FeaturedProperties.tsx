@@ -13,63 +13,11 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import properties from "@/data/propertyData";
+import { Property, PropertyTag } from "@/types/index";
+import { useLikedProperties } from "@/hooks/useLikedProperties";
 
-// Define types for properties
-type PropertyTag =
-  | "Sustainable"
-  | "Community-Focused"
-  | "Wellness"
-  | "Just In"
-  | "Sale"
-  | "Rent"
-  | "Luxury"
-  | "Affordable"
-  | "Investment"
-  | "Innovation";
-
-interface Property {
-  id: string;
-  title: string;
-  location: string;
-  price: number;
-  image: string;
-  tags: PropertyTag[];
-  purposeAlignment: string;
-}
-
-const featuredProperties: Property[] = [
-  {
-    id: "123e4567-e89b-12d3-a456-426614174000",
-    title: "Government Quarters",
-    location: "Abuja, Nigeria",
-    price: 200000000,
-    image: "/images/properties/kuje_abuja/kuje_house_1.jpg",
-    tags: ["Sale", "Just In"],
-    purposeAlignment:
-      "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-  },
-  {
-    id: "community-haven-2",
-    title: "Community-Integrated Residence",
-    location: "Abuja, Nigeria",
-    price: 350000,
-    image:
-      "/images/properties/ifako_ijaiye/WhatsApp Image 2025-03-13 at 21.48.00_cd8d2453.jpg",
-    tags: ["Community-Focused", "Innovation"],
-    purposeAlignment:
-      "A living space that fosters connection, collaborative learning, and shared growth.",
-  },
-  {
-    id: "wellness-retreat-3",
-    title: "Holistic Wellness Sanctuary",
-    location: "Port Harcourt, Nigeria",
-    price: 500000,
-    image: "/images/properties/akowonjo/Screenshot_1.png",
-    tags: ["Wellness", "Sustainable"],
-    purposeAlignment:
-      "A transformative environment supporting mental, physical, and spiritual well-being.",
-  },
-];
+const featuredProperties = properties.slice(0, 3);
 
 const FeaturedProperties = () => {
   const [activeProperty, setActiveProperty] = useState<string | null>(null);
@@ -132,7 +80,7 @@ const FeaturedProperties = () => {
 
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
-      const scrollAmount = 320; // Approximate card width
+      const scrollAmount = 320;
       const newScrollLeft =
         scrollContainerRef.current.scrollLeft +
         (direction === "left" ? -scrollAmount : scrollAmount);
@@ -215,16 +163,6 @@ const FeaturedProperties = () => {
         </div>
 
         {/* View More Properties Button */}
-        {/* <div className="text-center mt-12">
-          <Link
-            href="/properties"
-            className="inline-flex items-center px-8 py-3   text-blue-600 rounded-full hover:bg-blue-700 transition-colors text-lg font-semibold"
-          >
-            View More Properties
-            <ArrowRight className="ml-2" size={20} />
-          </Link>
-        </div> */}
-
         <div className="text-center mt-12">
           <Link
             href="/properties"
@@ -260,6 +198,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   handleShare,
   tagColors,
 }) => {
+  const { toggleLike, isLiked } = useLikedProperties();
+
   return (
     <motion.div
       className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
@@ -267,6 +207,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
       onHoverEnd={() => setActiveProperty(null)}
       whileHover={{ scale: 1.05 }}
     >
+      {/* making entire card clickable */}
+
       {/* Property Image */}
       <div className="relative overflow-hidden">
         <img
@@ -288,11 +230,12 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* Share Button */}
         <div className="absolute top-4 right-4">
           <button
-            onClick={() =>
+            onClick={(e) => {
+              e.stopPropagation();
               setShowShareOptions(
                 showShareOptions === property.id ? null : property.id
-              )
-            }
+              );
+            }}
             className="bg-white rounded-full p-2 shadow-lg hover:bg-gray-50 transition-colors"
           >
             <Forward size={18} className="text-gray-600" />
@@ -340,9 +283,17 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
           <h3 className="text-2xl font-semibold text-gray-800 flex-1 mr-2">
             {property.title}
           </h3>
+          {/* Like Button */}
           <Heart
-            className="text-gray-400 hover:text-red-500 cursor-pointer flex-shrink-0"
-            size={24}
+            className={`${
+              isLiked(property.id)
+                ? "text-red-500 fill-red-500"
+                : "text-gray-600"
+            } ...`}
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleLike(property.id);
+            }}
           />
         </div>
 
@@ -351,31 +302,14 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
           <span>{property.location}</span>
         </div>
 
-        {/* Always reserve space for purpose alignment */}
-        {/* <div className="mb-4 min-h-[60px] flex items-center">
-          {activeProperty === property.id ? (
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-sm text-gray-500 italic"
-            >
-              {property.purposeAlignment}
-            </motion.p>
-          ) : (
-            <div className="h-[40px]" /> // Placeholder to maintain consistent height
-          )}
-        </div> */}
-
         <div className="mb-4">
-          <p className="text-sm text-gray-500 italic">
-            {property.purposeAlignment}
-          </p>
+          <p className="text-sm text-gray-500 italic">{property.description}</p>
         </div>
 
-        {/* Price and Details - Always visible */}
+        {/* Price and Details  */}
         <div className="flex justify-between items-center">
-          <span className="text-xl font-bold text-blue-600">
-            #{property.price.toLocaleString()}
+          <span className="text-xl font-bold text-gray-900">
+            {property.price}
           </span>
           <Link
             href={`/properties/${property.id}`}

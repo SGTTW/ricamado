@@ -14,7 +14,6 @@ export default function ContactForm() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  // Removed unused isOpen and setSubmitStatus variables
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -40,8 +39,7 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        // Removed setIsOpen(false) since isOpen is no longer used
-        setFormData({
+         setFormData({
           name: "",
           email: "",
           phone: "",

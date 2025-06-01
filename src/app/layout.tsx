@@ -59,7 +59,7 @@ export default function RootLayout({
         <ScrollButton />
         <FooterWrapper />
         <Toaster position="top-right" theme="light" />
-      </body>
+      </body>       
     </html>
   );
 }

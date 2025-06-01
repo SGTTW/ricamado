@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, Phone } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function CTA() {
   const [hoveredButton, setHoveredButton] = useState<string | null>(null);
@@ -24,7 +24,7 @@ export default function CTA() {
               onMouseEnter={() => setHoveredButton("contact")}
               onMouseLeave={() => setHoveredButton(null)}
             >
-              <Phone className="mr-2 h-5 w-5" />
+              {/* <Phone className="mr-2 h-5 w-5" /> */}
               Contact Us
               {hoveredButton === "contact" && (
                 <ArrowRight className="ml-2 h-5 w-5" />

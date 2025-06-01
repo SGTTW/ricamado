@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-
+import { toast } from "sonner";
 interface ContactAgentFormProps {
   propertyTitle: string;
 }
@@ -12,7 +12,7 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
     name: "",
     email: "",
     phone: "",
-    message: `I am interested in ${propertyTitle}.`,
+    message: `I am interested in "${propertyTitle}".`,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -36,33 +36,40 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
           name: "",
           email: "",
           phone: "",
-          message: `I am interested in ${propertyTitle}.`,
+          message: `I am interested in "${propertyTitle}".`,
+        });
+    
+        toast.success("Inquiry sent! An agent will contact you soon.", {
+          position: "top-right",
+          duration: 5000,
+        });
+      } else {
+        toast.error("Something went wrong. Please try again.", {
+          position: "top-right",
+          duration: 5000,
         });
       }
+    } catch  {
+      toast.error(
+        "Failed to send inquiry. Please check your internet connection and try again.",
+        {
+          position: "top-right",
+          duration: 5000,
+        }
+      );
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  if (isSubmitted) {
-    return (
-      <div className="text-center py-4">
-        <h3 className="text-lg font-medium text-green-600 mb-2">
-          Thank you for your interest!
-        </h3>
-        <p className="text-gray-600">An agent will contact you shortly.</p>
-      </div>
-    );
-  }
-
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="block text-sm font-medium mb-1">Full name *</label>
+        <label className="block text-sm font-medium mb-1">Name *</label>
         <input
           type="text"
           required
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 outline-none box-shadow-sm"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
@@ -72,7 +79,7 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
         <input
           type="email"
           required
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 outline-none box-shadow-sm"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
@@ -82,7 +89,7 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
         <input
           type="tel"
           required
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 outline-none box-shadow-sm"
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
         />
@@ -92,7 +99,7 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
           How can an agent help?
         </label>
         <textarea
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 outline-none box-shadow-sm"
           rows={3}
           required
           value={formData.message}
@@ -101,6 +108,11 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
           }
         />
       </div>
+      <p className="text-xs text-gray-500 mt-2">
+        By proceeding, you consent to receive calls and texts at the number you
+        provided from Ricamado and others about your inquiry, but not as a
+        condition of any purchase.
+      </p>
       <button
         type="submit"
         disabled={isSubmitting}
@@ -108,11 +120,6 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
       >
         {isSubmitting ? "Sending..." : "Contact Agent"}
       </button>
-      <p className="text-xs text-gray-500 mt-2">
-        By proceeding, you consent to receive calls and texts at the number you
-        provided from Ricamado and others about your inquiry, but not as a
-        condition of any purchase.
-      </p>
     </form>
   );
 };
