@@ -16,6 +16,7 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  console.log(isSubmitted)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
