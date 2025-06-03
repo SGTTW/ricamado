@@ -18,34 +18,9 @@ const PropertyList = ({ properties, itemsPerPage = 6 }: PropertyListProps) => {
 
   const [visibleItems, setVisibleItems] = useState(itemsPerPage);
   const [hoveredViewMore, setHoveredViewMore] = useState(false);
-  // const [likedProperties, setLikedProperties] = useState<Set<string>>(() => {
-  //   if (typeof window !== "undefined") {
-  //     const saved = sessionStorage.getItem("likedProperties");
-  //     return saved ? new Set(JSON.parse(saved)) : new Set();
-  //   }
-  //   return new Set();
-  // });
 
   const [showShareOptions, setShowShareOptions] = useState<string | null>(null);
 
-  // const toggleLike = (propertyId: string) => {
-  //   setLikedProperties((prev) => {
-  //     const newSet = new Set(prev);
-  //     if (newSet.has(propertyId)) {
-  //       newSet.delete(propertyId);
-  //     } else {
-  //       newSet.add(propertyId);
-  //     }
-  //     // Save to sessionStorage
-  //     if (typeof window !== "undefined") {
-  //       sessionStorage.setItem(
-  //         "likedProperties",
-  //         JSON.stringify(Array.from(newSet))
-  //       );
-  //     }
-  //     return newSet;
-  //   });
-  // };
   const handleShare = (platform: string, property: Property) => {
     const shareUrl = `${window.location.origin}/properties/${property.id}`;
     const shareTitle = `${property.title} - ${property.price}`;
@@ -83,16 +58,6 @@ const PropertyList = ({ properties, itemsPerPage = 6 }: PropertyListProps) => {
   const showMoreItems = () => {
     setVisibleItems((prev) => prev + itemsPerPage);
   };
-
-  // useEffect(() => {
-  //   // Sync with sessionStorage on component mount
-  //   if (typeof window !== "undefined") {
-  //     const saved = sessionStorage.getItem("likedProperties");
-  //     if (saved) {
-  //       setLikedProperties(new Set(JSON.parse(saved)));
-  //     }
-  //   }
-  // }, []);
 
   return (
     <div className="space-y-8">

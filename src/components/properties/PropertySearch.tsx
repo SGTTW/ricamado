@@ -109,35 +109,33 @@ const PropertySearch = ({
       ref={searchRef}
       // className="relative max-w-2xl mx-auto bg-white/10   rounded-xl p-2"
       // className="relative border-2 border-gray-200 rounded-lg shadow-md bg-blue-200  p-2"
-      // className="relative"
 
       className={`relative ${
         variant === "hero"
           ? "max-w-2xl mx-auto rounded-xl p-2"
-          : "border-2 border-gray-200 rounded-lg shadow-md bg-cover bg-center p-2"
+          : "border-2 border-gray-200 rounded-lg shadow-md p-2"
       } ${className}`}
-      style={
-        variant === "default"
-          ? {
-              backgroundImage:
-              "url('/images/properties/properties/premium_photo-1689609950112-d66095626efb.avif')",
-              // backdropFilter: "blur(4px)",
-              // backgroundColor: "rgba(255, 255, 255, 0.1)"
-              // backgroundColor: "gray-100",
-            }
-          : {}
-      }
     >
       {/* Updated input container to match hero section style */}
-      <div className="bg-white/10 backdrop-blur-md rounded-xl p-2">
+      {/* <div className="bg-white/10 backdrop-blur-md rounded-xl p-2">
         <div className="flex items-center bg-white/20 rounded-lg p-2 h-12">
           <input
             type="text"
-            placeholder="Find spaces that resonate with your life's mission"
+            // placeholder= "Search properties by location, title, or features"
+            // placeholder= "Find your dream property"
+            // placeholder= "Find spaces that resonate with your life's mission"
+            // placeholder= "Find your perfect space"
+
+            placeholder={
+              variant === "hero"
+                ? "Find spaces that resonate with your life's mission"
+                : "Search properties by location, title, or features"
+            }
             className="w-full bg-transparent text-white placeholder-white/70 focus:outline-none" // Updated to match hero style
             value={searchTerm}
             onChange={handleSearchChange}
             // onClick={() => setShowResults(true)}
+        
             onClick={() => {
               setShowResults((prev) => !prev);
             }}
@@ -153,6 +151,68 @@ const PropertySearch = ({
               </button>
             ) : (
               <Search size={20} className="text-white/70 mr-1" />
+            )}
+          </div>
+        </div>
+      </div> */}
+
+      {/*  Updated input container - simplified for default variant */}
+
+      <div
+        className={
+          variant === "hero"
+            ? "bg-white/10 backdrop-blur-md rounded-xl p-2"
+            : "p-2"
+        }
+      >
+        <div
+          className={`flex items-center rounded-lg p-2  ${
+            variant === "hero"
+              ? "bg-white/20 h-12"
+              // : "bg-white border border-gray-200" 
+              : "bg-white h-6" 
+          }`}
+        >
+          <input
+            type="text"
+             placeholder={
+              variant === "hero"
+                ? "Find spaces that resonate with your life's mission"
+                : "Search properties by location, title, or features"
+            }
+            className={`w-full focus:outline-none ${
+              variant === "hero"
+                ? "bg-transparent text-white placeholder-white/70"
+                : "bg-transparent text-gray-900 placeholder-gray-500"  
+            }`}
+            value={searchTerm}
+            onChange={handleSearchChange}
+            onClick={() => {
+              setShowResults((prev) => !prev);
+            }}
+          />
+
+          <div className="ml-3">
+            {searchTerm ? (
+              <button
+                onClick={clearSearch}
+                className={
+                  variant === "hero"
+                    ? "text-white/70 hover:text-white"
+                    : "text-gray-500 hover:text-gray-700"
+                }
+              >
+                <X size={20} />
+              </button>
+            ) : (
+              <Search
+                size={20}
+                className={
+                  variant === "hero"
+                    ? "text-white/70 mr-1"
+                    : "text-gray-500 mr-1"
+                }
+              />
             )}
           </div>
         </div>
