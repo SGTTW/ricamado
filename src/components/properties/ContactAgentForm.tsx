@@ -16,7 +16,7 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  console.log(isSubmitted)
+  void isSubmitted; // Temporary to avoid linting error
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,7 +39,7 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
           phone: "",
           message: `I am interested in "${propertyTitle}".`,
         });
-    
+
         toast.success("Inquiry sent! An agent will contact you soon.", {
           position: "top-right",
           duration: 5000,
@@ -50,7 +50,7 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
           duration: 5000,
         });
       }
-    } catch  {
+    } catch {
       toast.error(
         "Failed to send inquiry. Please check your internet connection and try again.",
         {
