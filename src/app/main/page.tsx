@@ -8,7 +8,7 @@ import WhyRicamado from "@/components/sections/WhyRicamado";
 import { faqs } from "@/lib/faqs";
 import CTA from "@/components/sections/CTA";
 
-// SEO Optimization 
+// SEO Optimization
 export const metadata: Metadata = {
   title: "Ricamado: Purposeful Living Spaces | Beyond Real Estate",
   description:
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="bg-white">
+      {/* Main Sections */}
       <HeroSection />
       <WhyRicamado />
       <FeaturedProperties />

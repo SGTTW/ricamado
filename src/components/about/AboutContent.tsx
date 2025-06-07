@@ -2,8 +2,9 @@
 import Image from "next/image";
 
 import { achievements } from "@/data/achievements";
-// import { coreValues } from "@/data/coreValues";
+import { coreValues } from "@/data/coreValues";
 // import { teamMembers } from "@/data/teamMembers";
+import { services } from "@/data/services";
 
 export default function AboutContent() {
   return (
@@ -15,23 +16,38 @@ export default function AboutContent() {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2">
               <p className="text-gray-700 mb-4">
-                Founded in 2021, Ricamado Unique Limited has established itself
+                {/* Founded in 2021, Ricamado Unique Limited has established itself
                 as a premier real estate development company known for crafting
                 distinctive properties that blend luxury, functionality, and
-                innovation.
+                innovation. */}
+                Founded in 2021, Ricamado Unique Limited has established itself
+                as a premier real estate consultancy and property management
+                company, specializing in connecting property owners with
+                qualified buyers, tenants, and investors across Nigeria&apos;s
+                dynamic real estate market.
               </p>
               <p className="text-gray-700 mb-4">
-                What began as a vision to transform the real estate landscape
+                {/* What began as a vision to transform the real estate landscape
                 has evolved into a trusted brand that delivers exceptional
                 living and commercial spaces across key locations. Our
                 commitment to quality construction, thoughtful design, and
-                client satisfaction has been the cornerstone of our success.
+                client satisfaction has been the cornerstone of our success. */}
+                What began as a vision to bridge the gap between property owners
+                and prospective clients has evolved into a trusted consultancy
+                that delivers comprehensive real estate solutions. Our deep
+                market knowledge, extensive network, and client-first approach
+                have made us the go-to partner for property owners seeking to
+                maximize their investment returns.
               </p>
               <p className="text-gray-700">
-                Today, Ricamado continues to push boundaries in the real estate
+                {/* Today, Ricamado continues to push boundaries in the real estate
                 sector, creating developments that not only meet the present
                 needs of our clients but anticipate future trends and lifestyle
-                requirements.
+                requirements. */}
+                Today, Ricamado continues to redefine real estate consultancy,
+                providing strategic guidance that not only meets our clients&apos;
+                immediate needs but positions them for long-term success in
+                Nigeria&apos;s evolving property landscape.
               </p>
               {/* add rc number */}
               <p className="text-gray-700 mt-4">
@@ -58,9 +74,13 @@ export default function AboutContent() {
                 Our Mission
               </h3>
               <p className="text-gray-700">
-                To create exceptional real estate properties that enhance the
+                {/* To create exceptional real estate properties that enhance the
                 quality of life for our clients while delivering sustainable
-                value to stakeholders, communities, and the environment.
+                value to stakeholders, communities, and the environment. */}
+                To bridge the gap between property owners and prospective
+                clients through expert consultancy, comprehensive market
+                knowledge, and personalized service that delivers optimal
+                outcomes for all parties.
               </p>
             </div>
             <div>
@@ -68,12 +88,42 @@ export default function AboutContent() {
                 Our Vision
               </h3>
               <p className="text-gray-700">
-                To be recognized as the leading innovative real estate
+                {/* To be recognized as the leading innovative real estate
                 developer, setting new standards in design excellence,
                 construction quality, and customer service while expanding our
-                footprint across strategic locations.
+                footprint across strategic locations. */}
+                To be Nigeria&apos;s most trusted real estate consultancy, known for
+                our innovative approach to property matching, market expertise,
+                and commitment to maximizing value for property owners and
+                satisfaction for clients.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Services   */}
+
+        {/* NEW SERVICES SECTION - ADDED HERE */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            Our Services
+          </h2>
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"> */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                // className="bg-white border border-gray-200 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                className="bg-white border border-gray-100 p-5 rounded-lg shadow-sm"
+              >
+                <div className="text-blue-600 mb-3">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {service.title}
+                </h3>
+                {/* <p className="text-gray-600 text-sm leading-relaxed"> */}
+                <p className="text-gray-600">{service.description}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -144,133 +194,3 @@ export default function AboutContent() {
     </div>
   );
 }
-
-// Data
-const coreValues = [
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-        />
-      </svg>
-    ),
-    title: "Integrity",
-    description:
-      "We conduct business with honesty, transparency, and ethical standards that build trust with all stakeholders.",
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-        />
-      </svg>
-    ),
-    title: "Excellence",
-    description:
-      "We strive for excellence in every aspect of our developments, from design and construction to customer service.",
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-        />
-      </svg>
-    ),
-    title: "Innovation",
-    description:
-      "We embrace innovative approaches and technologies to create future-ready properties that stand out in the market.",
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    ),
-    title: "Timeliness",
-    description:
-      "We respect our commitments by delivering projects on schedule without compromising on quality.",
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
-      </svg>
-    ),
-    title: "Sustainability",
-    description:
-      "We integrate sustainable practices in our developments to minimize environmental impact and maximize long-term value.",
-  },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-        />
-      </svg>
-    ),
-    title: "Community Focus",
-    description:
-      "We develop properties that contribute positively to communities and enhance the quality of life for residents.",
-  },
-];

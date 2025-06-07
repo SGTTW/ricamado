@@ -130,8 +130,8 @@ export default function Footer() {
                 className="mr-1"
               />
               <h2 className="text-2xl font-bold text-blue-500 flex items-center h-[30px]">
-                Ricamado 
-              </h2> 
+                Ricamado
+              </h2>
             </div>
             <p className="text-gray-300 mb-4">
               Transforming lives through intentional living spaces.
@@ -190,7 +190,7 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email"
-                  className="w-full px-3 py-2 mr-1 outline-none rounded-l-md bg-gray-800 text-white"
+                  className="w-full px-3 py-2 mr-1  outline-none rounded-l-md bg-gray-800 text-white"
                   required
                 />
                 <button

@@ -4,12 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import {
-  Menu,
-  X,
-  Moon,
-  Sun,
-} from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 
 const NAV_ITEMS = [
   {
@@ -50,11 +45,11 @@ export default function Navbar() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     if (darkMode) {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = 'light';
+      document.documentElement.classList.remove("dark");
+      localStorage.theme = "light";
     } else {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
+      document.documentElement.classList.add("dark");
+      localStorage.theme = "dark";
     }
   };
 
@@ -63,20 +58,39 @@ export default function Navbar() {
     // Check if theme is stored in localStorage
     const savedTheme = localStorage.theme;
     // Check if system prefers dark mode
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+    const systemPrefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
     // Set initial dark mode state
-    const isDarkMode = 
-      savedTheme === 'dark' || 
-      (!savedTheme && systemPrefersDark);
-    
+    const isDarkMode =
+      savedTheme === "dark" || (!savedTheme && systemPrefersDark);
+
     setDarkMode(isDarkMode);
-    
+
     if (isDarkMode) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
+
+    // Listen for system/browser changes (if no localStorage preference)
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleSystemChange = (e: MediaQueryListEvent) => {
+      if (!localStorage.theme) {
+        // Only sync if no manual preference
+        const newDarkMode = e.matches;
+        setDarkMode(newDarkMode);
+        if (newDarkMode) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleSystemChange);
+    return () => mediaQuery.removeEventListener("change", handleSystemChange);
   }, []);
 
   return (
@@ -96,7 +110,6 @@ export default function Navbar() {
             className="text-2xl font-semi-bold text-gray-800 dark:text-white"
           >
             <span className="text-blue-600 dark:text-blue-400">Ricamado</span>
-           
           </Link>
         </div>
 
@@ -108,8 +121,8 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`group relative transition-colors ${
-                  pathname === item.href 
-                    ? "text-blue-600 dark:text-blue-400 font-medium" 
+                  pathname === item.href
+                    ? "text-blue-600 dark:text-blue-400 font-medium"
                     : "text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                 }`}
               >
@@ -130,8 +143,8 @@ export default function Navbar() {
           <Link
             href={CONTACT_ITEM.href}
             className={`group relative transition-colors ${
-              pathname === CONTACT_ITEM.href 
-                ? "text-blue-600 dark:text-blue-400 font-medium" 
+              pathname === CONTACT_ITEM.href
+                ? "text-blue-600 dark:text-blue-400 font-medium"
                 : "text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             }`}
           >
@@ -143,9 +156,9 @@ export default function Navbar() {
               {CONTACT_ITEM.description}
             </div>
           </Link>
-          
+
           {/* Dark Mode Toggle */}
-          <button 
+          <button
             onClick={toggleDarkMode}
             className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             aria-label="Toggle dark mode"
@@ -161,7 +174,7 @@ export default function Navbar() {
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex space-x-4 items-center">
           {/* Dark Mode Toggle (Mobile) */}
-          <button 
+          <button
             onClick={toggleDarkMode}
             className="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             aria-label="Toggle dark mode"
@@ -172,7 +185,7 @@ export default function Navbar() {
               <Moon className="w-5 h-5 text-gray-600 dark:text-gray-300" />
             )}
           </button>
-          
+
           {/* Hamburger Menu */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -184,13 +197,13 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu - Slide from Right */}
-        <div 
+        <div
           className={`fixed top-0 right-0 h-full w-full md:hidden bg-black bg-opacity-50 z-50 transition-opacity duration-300 ${
             isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
           onClick={() => setIsMenuOpen(false)}
         >
-          <div 
+          <div
             className={`absolute top-0 right-0 h-full w-full bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
@@ -206,16 +219,18 @@ export default function Navbar() {
                     height={24}
                     className="mr-2"
                   />
-                  <span className="text-xl font-bold text-blue-600 dark:text-blue-400">Ricamado</span>
+                  <span className="text-xl font-bold text-blue-600 dark:text-blue-400">
+                    Ricamado
+                  </span>
                 </div>
-                <button 
+                <button
                   onClick={() => setIsMenuOpen(false)}
                   className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                 >
                   <X className="w-6 h-6" />
                 </button>
               </div>
-              
+
               <div className="flex flex-col space-y-4 bg-white">
                 {/* Combine all nav items for mobile */}
                 {[...NAV_ITEMS, CONTACT_ITEM].map((item) => (
@@ -223,20 +238,22 @@ export default function Navbar() {
                     key={item.href}
                     href={item.href}
                     className={`flex items-center py-4 px-2 border-b border-gray-100 dark:border-gray-800 ${
-                      pathname === item.href 
-                        ? "text-blue-600 dark:text-blue-400 bg-gray-50 dark:bg-gray-800" 
+                      pathname === item.href
+                        ? "text-blue-600 dark:text-blue-400 bg-gray-50 dark:bg-gray-800"
                         : "text-gray-800 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <div>
                       <span className="font-medium text-lg">{item.label}</span>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{item.description}</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 ))}
               </div>
-              
+
               {/* Mobile menu footer */}
               {/* <div className="mt-auto pt-6 flex items-center justify-between">
                 <div className="text-sm text-gray-500 dark:text-gray-400">

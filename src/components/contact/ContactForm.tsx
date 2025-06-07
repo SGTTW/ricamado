@@ -39,7 +39,7 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-         setFormData({
+        setFormData({
           name: "",
           email: "",
           phone: "",

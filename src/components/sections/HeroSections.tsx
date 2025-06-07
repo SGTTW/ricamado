@@ -81,7 +81,8 @@ const HeroSection = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="mt-10 flex justify-center space-x-4">
+          {/* <div className="mt-10 flex justify-center space-x-4 "> */}
+          <div className="mt-10 flex flex-col space-y-4 max-[320px]:flex max-[320px]:flex-row max-[320px]:space-y-0 max-[320px]:space-x-4 justify-center sm:flex-row sm:space-y-0 sm:space-x-4">
             <Link
               href="/properties"
               className="px-8 py-3 bg-white text-blue-900 font-semibold rounded-full hover:bg-blue-50 transition outline-none"

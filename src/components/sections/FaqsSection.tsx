@@ -19,8 +19,7 @@ export default function FaqsSection({ faqs }: { faqs: FAQ[] }) {
           Frequently Asked Questions
         </h2>
         <p className="max-w-3xl text-xl mx-auto text-gray-600">
-          Find answers to common questions about our services, delivery process,
-          and more.
+          Find answers to common questions.
         </p>
       </div>
 
@@ -28,7 +27,7 @@ export default function FaqsSection({ faqs }: { faqs: FAQ[] }) {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-200 rounded-lg overflow-hidden transition-all duration-200"
+            className="border border-gray-200 hover:bg-gray-50 rounded-lg overflow-hidden transition-all duration-200"
           >
             <button
               className="w-full text-left p-6 focus:outline-none flex justify-between items-center"

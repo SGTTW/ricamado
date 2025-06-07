@@ -44,7 +44,7 @@ const properties: Property[] = [
     description:
       "Beautiful 3-bedroom apartment available for rent. Enjoy the convenience of city living with all modern comforts and amenities.",
     features: [
-      " Luxuriously finished   ",
+      " Luxuriously finished",
       " Executive POP",
       " Smart home",
       " Infrared steps light",
@@ -52,11 +52,7 @@ const properties: Property[] = [
       " Standard kitchen",
       " Jaccuzi, Cubicle,",
       " Integrated audios systems ",
-      " Parking space of 3Cars",
-      " Good Neighborhood",
-      " Secured Estate",
-      " Proximity& Accessible",
-      " Few minutes drive to Ikeja Airport",
+      " Parking space of 3 Cars",
     ],
     image:
       "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.12_3c3b30f4.jpg",
@@ -71,11 +67,12 @@ const properties: Property[] = [
     videos: [],
     label: "",
     amenities: [
-      "Ideal for government officials and civil servants",
-      "Strategic location within Abuja",
-      "Investment opportunity with growth potential",
+      " Good Neighborhood",
+      " Secured Estate",
+      " Proximity & Accessible",
+      " Few minutes drive to Ikeja Airport",
     ],
-     
+
     askingPrice: ["₦200,000,000"],
     tags: ["Just In", "Sale"],
     documents: ["C of O (Certificate of Occupancy)"],
@@ -91,12 +88,9 @@ const properties: Property[] = [
       "VACANT – PAY AND PARK IN 💥 DIRECT BRIEF 💥 Owner Alive | Just Repainted Magnificently built 5-bedroom duplex in a serene estate beside Kayfarm Estate, Obawole, Ogba, Ifako-Ijaiye LGA, Lagos",
     features: [
       "Two sitting rooms & a waiting room",
-      " Fully tiled with POP finishing",
-      "   Fully equipped large kitchen",
-      " Study room & separate mini flat",
-      " Spacious parking for up to 8 cars",
-      "Fully interlocked compound",
-      " 24-hour electricity & estate mobile security",
+      "Fully tiled with POP finishing",
+      "Fully equipped large kitchen",
+      "Study room & separate mini flat",
     ],
     image:
       "/images/properties//ifako_ijaiye/WhatsApp Image 2025-03-13 at 21.48.00_cd8d2453.jpg",
@@ -108,7 +102,11 @@ const properties: Property[] = [
     ],
     videos: [],
     label: "SALE",
-    amenities: [],
+    amenities: [
+      "Spacious parking for up to 8 cars",
+      "Fully interlocked compound",
+      "24-hour electricity & estate mobile security",
+    ],
     reasonForSale: "Owner relocating",
     askingPrice: ["₦120,000,000 (One Hundred and Twenty Million Naira)"],
     tags: ["Just In", "Sale"],
@@ -128,12 +126,6 @@ const properties: Property[] = [
       "Multiple Shops & Offices",
       "3½ Plots of Land",
       "Certificate of Occupancy",
-      "Junction Property",
-      "Commercial Zoning",
-      "Prime Location",
-      "High Traffic Area",
-      "Corner Plot",
-      "Near Major Establishments",
     ],
     image:
       "/images/properties/shopping_complex_abule_egba/shoppingComplexAtAbuleEgba.jpg",
@@ -150,6 +142,14 @@ const properties: Property[] = [
     askingPrice: ["₦400,000,000 (Four Hundred Million Naira)"],
     tags: ["Just In", "Sale"],
     landSize: "3½ Plots of Land",
+    amenities: [
+      "Junction Property",
+      "Commercial Zoning",
+      "Prime Location",
+      "High Traffic Area",
+      "Corner Plot",
+      "Near Major Establishments",
+    ],
   },
 
   // 3 Bedroom Flats, Akowonjo, Lagos
@@ -165,10 +165,8 @@ const properties: Property[] = [
       "1 Floor with 12 Shops",
       "900+ sqm Land Size",
       "Well-Structured Building",
-      "Good Rental Value",
-      "Secure Environment",
+
       "Ample Parking Space",
-      "Proximity to Major Roads",
     ],
     image: "/images/properties/akowonjo/Screenshot_1.png",
     images: ["/images/properties/akowonjo/Screenshot_1.png"],
@@ -177,7 +175,11 @@ const properties: Property[] = [
     ],
     documents: ["Certificate of Occupancy (C of O)"],
     label: "SALE",
-
+    amenities: [
+      "Proximity to Major Roads",
+      "Good Rental Value",
+      "Secure Environment",
+    ],
     askingPrice: ["₦400,000,000 (Four Hundred Million Naira) (net)"],
     tags: ["Rent"],
     landSize: "900+ square meters",
