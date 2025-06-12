@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function PrivacyHero() {
   return (
-    <section className="relative bg-indigo-700 text-white py-20">
+    <section className="relative bg-blue-500 text-white py-20">
       <div className="absolute inset-0 bg-black/30">
         <Image
           src="/images/privacy/photo-1612535042392-3f3c32a8e44c.avif"

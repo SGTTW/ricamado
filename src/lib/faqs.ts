@@ -4,7 +4,7 @@ export const faqs: FAQ[] = [
   {
     question: "Why Ricamado?",
     answer:
-      "At Ricamado, we believe in more than just transactions. We connect people with properties that inspire and transform lives. Our mission is to reimagine real estate as a catalyst for personal and community growth.",
+      "At Ricamado, we believe in more than just transactions. We connect people, investors, businesses with properties that inspire and transform lives. Our mission is to reimagine real estate as a catalyst for personal and community growth.",
   },
   {
     question: "How do I buy a property?",

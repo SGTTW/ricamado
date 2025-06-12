@@ -1,13 +1,19 @@
 // src/components/properties/ContactAgentForm.tsx
 "use client";
 
+import { PropertyTag } from "@/types";
 import { useState } from "react";
+import Link from "next/link";
 import { toast } from "sonner";
 interface ContactAgentFormProps {
   propertyTitle: string;
+  propertyTags: PropertyTag[];
 }
 
-const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
+const ContactAgentForm = ({
+  propertyTitle,
+  propertyTags,
+}: ContactAgentFormProps) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -62,6 +68,50 @@ const ContactAgentForm = ({ propertyTitle }: ContactAgentFormProps) => {
       setIsSubmitting(false);
     }
   };
+
+  // if property is sold...
+  const isSold =
+    propertyTags.includes("Sold") || propertyTags.includes("Rented");
+  if (isSold) {
+    return (
+      <div className="space-y-4 text-center">
+        {/* <div className="bg-red-50 border border-red-200 rounded-lg p-4"> */}
+        <div className="bg-transparent border border-gray-200 rounded-lg p-4">
+          {/* <h3 className="font-semibold text-red-800 mb-2"> */}
+          <h3 className="font-semibold text-gray-700 mb-2">
+            {propertyTags.includes("Sold")
+              ? "Property Sold "
+              : propertyTags.includes("Rented")
+              ? "Property Rented"
+              : ""}
+          </h3>
+          <p className="text-gray-400 text-sm">
+            {propertyTags.includes("Sold")
+              ? "This property has been sold and is no longer available."
+              : propertyTags.includes("Rented")
+              ? "This property has been rented out and is no longer available."
+              : ""}
+          </p>
+        </div>
+        {/* <button
+          type="button"
+          disabled
+          className="w-full py-2 bg-gray-400 text-gray-50 rounded cursor-not-allowed opacity-60"
+        >
+          Property No Longer Available
+        </button> */}
+        {/* Optional: Add link to similar properties */}
+        <p className="text-sm text-gray-500">
+          <Link
+            href={"/properties"}
+            className="text-blue-600 hover:text-blue-500"
+          >
+            View similar available properties
+          </Link>
+        </p>
+      </div>
+    );
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">

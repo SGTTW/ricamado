@@ -50,7 +50,7 @@ export const testimonials: Testimonial[] = [
     title: "Real Estate Investor, Abuja",
   },
   {
-    text: "I needed to relocate my office space quickly due to business expansion. Ricamado found us the perfect commercial property in Victoria Island within two weeks. Their network and efficiency saved our business valuable time.",
+    text: "I needed to relocate my office space quickly due to business expansion. Ricamado found us the perfect commercial property in Victoria Island within months. Their network and efficiency saved our business valuable time.",
     name: "Sarah Adebola",
     title: "CEO, Adebola Consulting Ltd",
   },

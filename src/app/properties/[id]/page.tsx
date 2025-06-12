@@ -13,12 +13,11 @@ import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 import { RiTwitterXFill } from "react-icons/ri";
 
-
 export default function PropertyDetailsPage({
   params,
 }: {
   params: Promise<{ id: string }>;
-}) {  
+}) {
   const [showShareOptions, setShowShareOptions] = useState(false);
   const [propertyId, setPropertyId] = useState<string | null>(null);
   const router = useRouter();
@@ -51,7 +50,6 @@ export default function PropertyDetailsPage({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [showShareOptions]);
-
 
   if (!propertyId) {
     return (
@@ -121,7 +119,7 @@ export default function PropertyDetailsPage({
 
   const handleBackClick = () => {
     // router.back();
-    router.push("/properties")
+    router.push("/properties");
   };
 
   return (
@@ -204,8 +202,11 @@ export default function PropertyDetailsPage({
                         onClick={() => handleShare("Twitter")}
                         className="flex items-center w-full px-3 py-2 hover:bg-gray-100 rounded text-sm"
                       >
-                        <RiTwitterXFill className="text-blue-400 mr-2" size={16} />
-                        X 
+                        <RiTwitterXFill
+                          className="text-blue-400 mr-2"
+                          size={16}
+                        />
+                        X
                       </button>
                       <button
                         onClick={() => handleShare("LinkedIn")}
@@ -289,7 +290,10 @@ export default function PropertyDetailsPage({
 
               <div className="md:col-span-1">
                 <div className="bg-gray-50 p-6 rounded-lg sticky top-4">
-                  <ContactAgentForm propertyTitle={property.title} />
+                  <ContactAgentForm
+                    propertyTitle={property.title}
+                    propertyTags={property.tags}
+                  />
                 </div>
               </div>
             </div>

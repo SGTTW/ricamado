@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="relative bg-blue-600 text-white py-20">
+    <section className="relative bg-blue-500 text-white py-20">
       <div className="absolute inset-0 bg-black/30">
         <Image
-          src="/images/about/photo-1624484326907-c57d9d96b346.avif"
+          src="/images/about/photo-1739486730239-5cd2b5f8c754.avif"
           alt="Ricamado Unique Limited buildings"
           fill
           className="object-cover"

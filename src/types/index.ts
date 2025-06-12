@@ -12,7 +12,9 @@ export type PropertyTag =
   | "Luxury"
   | "Affordable"
   | "Investment"
-  | "Innovation";
+  | "Innovation"
+  | "Sold"
+  | "Rented";
 
 export interface Property {
   askingPrice?: string[];
@@ -31,7 +33,6 @@ export interface Property {
   title: string;
   videos?: string[];
   tags: PropertyTag[];
-  
 }
 
 export interface Testimonial {

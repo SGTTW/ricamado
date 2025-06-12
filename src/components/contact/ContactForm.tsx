@@ -94,7 +94,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Enter full name"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 focus:outline-none box-shadow-sm"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500   focus:outline-none box-shadow-sm"
                 required
               />
             </div>
@@ -113,7 +113,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter email address"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 focus:outline-none box-shadow-sm"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500  focus:outline-none box-shadow-sm"
                 required
               />
             </div>
@@ -149,7 +149,8 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Enter phone number"
-                  className="flex-1 px-4 py-2 border border-gray-300 rounded-r-md focus:ring-blue-500 focus:border-blue-500 focus:outline-none box-shadow-sm"
+                  className="flex-1 px-4 py-2 border border-gray-300 rounded-r-md focus:ring-2 focus:ring-blue-500   focus:outline-none box-shadow-sm"
+                  required
                 />
               </div>
             </div>
@@ -168,7 +169,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 rows={5}
                 placeholder="Message..."
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 focus:outline-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 required
               ></textarea>
             </div>

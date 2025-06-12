@@ -116,48 +116,7 @@ const PropertySearch = ({
           : "border-2 border-gray-200 rounded-lg shadow-md p-2"
       } ${className}`}
     >
-      {/* Updated input container to match hero section style */}
-      {/* <div className="bg-white/10 backdrop-blur-md rounded-xl p-2">
-        <div className="flex items-center bg-white/20 rounded-lg p-2 h-12">
-          <input
-            type="text"
-            // placeholder= "Search properties by location, title, or features"
-            // placeholder= "Find your dream property"
-            // placeholder= "Find spaces that resonate with your life's mission"
-            // placeholder= "Find your perfect space"
-
-            placeholder={
-              variant === "hero"
-                ? "Find spaces that resonate with your life's mission"
-                : "Search properties by location, title, or features"
-            }
-            className="w-full bg-transparent text-white placeholder-white/70 focus:outline-none" // Updated to match hero style
-            value={searchTerm}
-            onChange={handleSearchChange}
-            // onClick={() => setShowResults(true)}
-        
-            onClick={() => {
-              setShowResults((prev) => !prev);
-            }}
-          />
-
-          <div className="ml-3">
-            {searchTerm ? (
-              <button
-                onClick={clearSearch}
-                className="text-white/70 hover:text-white"
-              >
-                <X size={20} />
-              </button>
-            ) : (
-              <Search size={20} className="text-white/70 mr-1" />
-            )}
-          </div>
-        </div>
-      </div> */}
-
       {/*  Updated input container - simplified for default variant */}
-
       <div
         className={
           variant === "hero"
@@ -167,15 +126,12 @@ const PropertySearch = ({
       >
         <div
           className={`flex items-center rounded-lg p-2  ${
-            variant === "hero"
-              ? "bg-white/20 h-12"
-              // : "bg-white border border-gray-200" 
-              : "bg-white h-6" 
+            variant === "hero" ? "bg-white/20 h-12" : "bg-white h-6"
           }`}
         >
           <input
             type="text"
-             placeholder={
+            placeholder={
               variant === "hero"
                 ? "Find spaces that resonate with your life's mission"
                 : "Search properties by location, title, or features"
@@ -183,7 +139,7 @@ const PropertySearch = ({
             className={`w-full focus:outline-none ${
               variant === "hero"
                 ? "bg-transparent text-white placeholder-white/70"
-                : "bg-transparent text-gray-900 placeholder-gray-500"  
+                : "bg-transparent text-gray-900 placeholder-gray-500"
             }`}
             value={searchTerm}
             onChange={handleSearchChange}

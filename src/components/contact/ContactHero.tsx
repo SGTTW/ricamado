@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function ContactHero() {
   return (
-    <section className="relative bg-blue-600 text-white py-20">
+    <section className="relative bg-blue-500 text-white py-20">
       <div className="absolute inset-0 bg-black/30">
         <Image
-          src="/images/contact/premium_photo-1737362946604-5b0d174dab40.avif"
+          src="/images/contact/photo-1587560699334-cc4ff634909a.avif"
           alt="Customer service team"
           fill
           className="object-cover"

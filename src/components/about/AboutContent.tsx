@@ -22,9 +22,8 @@ export default function AboutContent() {
                 innovation. */}
                 Founded in 2021, Ricamado Unique Limited has established itself
                 as a premier real estate consultancy and property management
-                company, specializing in connecting property owners with
-                qualified buyers, tenants, and investors across Nigeria&apos;s
-                dynamic real estate market.
+                company, specializing in connecting property owners with buyers,
+                and investors across Nigeria&apos;s dynamic real estate market.
               </p>
               <p className="text-gray-700 mb-4">
                 {/* What began as a vision to transform the real estate landscape
@@ -32,27 +31,45 @@ export default function AboutContent() {
                 living and commercial spaces across key locations. Our
                 commitment to quality construction, thoughtful design, and
                 client satisfaction has been the cornerstone of our success. */}
-                What began as a vision to bridge the gap between property owners
+                {/* What began as a vision to bridge the gap between property owners
                 and prospective clients has evolved into a trusted consultancy
                 that delivers comprehensive real estate solutions. Our deep
                 market knowledge, extensive network, and client-first approach
                 have made us the go-to partner for property owners seeking to
-                maximize their investment returns.
+                maximize their investment returns. */}
+                {/* What began as a vision to transform how Nigerians discover their
+                ideal spaces has evolved into a comprehensive digital platform
+                that bridges the gap between property seekers and perfect
+                properties. We understand that your environment shapes your
+                success—whether it's finding the right home that nurtures your
+                family's growth, securing commercial space that accelerates your
+                business, or identifying investment properties that build your
+                wealth. */}
               </p>
               <p className="text-gray-700">
                 {/* Today, Ricamado continues to push boundaries in the real estate
                 sector, creating developments that not only meet the present
                 needs of our clients but anticipate future trends and lifestyle
                 requirements. */}
-                Today, Ricamado continues to redefine real estate consultancy,
-                providing strategic guidance that not only meets our clients&apos;
-                immediate needs but positions them for long-term success in
-                Nigeria&apos;s evolving property landscape.
+                {/* Today, Ricamado continues to redefine real estate consultancy,
+                providing strategic guidance that not only meets our
+                clients&apos; immediate needs but positions them for long-term
+                success in Nigeria&apos;s evolving property landscape. */}
+                At Ricamado, we start with WHY: We believe everyone deserves to
+                live and work in spaces that align with their purpose and
+                potential. Our systematic approach begins with deeply
+                understanding your unique needs, lifestyle, and goals. Then,
+                through our curated property listings, strategic promotion, and
+                expert consultation services, we connect you with tailored
+                spaces that don&apos;t just meet your requirements but aim at
+                elevating lives and businesses.
               </p>
               {/* add rc number */}
               <p className="text-gray-700 mt-4">
-                Ricamado Unique Limited is registered with the Corporate Affairs
-                Commission (CAC) of Nigeria, RC Number: 1890684.
+                <i>
+                  Ricamado Unique Limited is registered with the Corporate
+                  Affairs Commission (CAC) of Nigeria, RC Number: 1890684.
+                </i>
               </p>
             </div>
             <div className="md:w-1/2 relative h-64 md:h-80 w-full rounded-lg overflow-hidden">
@@ -77,10 +94,12 @@ export default function AboutContent() {
                 {/* To create exceptional real estate properties that enhance the
                 quality of life for our clients while delivering sustainable
                 value to stakeholders, communities, and the environment. */}
-                To bridge the gap between property owners and prospective
+                {/* To bridge the gap between property owners and prospective
                 clients through expert consultancy, comprehensive market
                 knowledge, and personalized service that delivers optimal
-                outcomes for all parties.
+                outcomes for all parties. */}
+                To transform lives by connecting individuals and businesses with
+                purposeful spaces that inspire growth, success, and fulfillment.
               </p>
             </div>
             <div>
@@ -92,10 +111,14 @@ export default function AboutContent() {
                 developer, setting new standards in design excellence,
                 construction quality, and customer service while expanding our
                 footprint across strategic locations. */}
-                To be Nigeria&apos;s most trusted real estate consultancy, known for
-                our innovative approach to property matching, market expertise,
-                and commitment to maximizing value for property owners and
-                satisfaction for clients.
+                {/* To be Nigeria&apos;s most trusted real estate consultancy, known
+                for our innovative approach to property matching, market
+                expertise, and commitment to maximizing value for property
+                owners and satisfaction for clients. */}
+                To be Nigeria&apos;s most trusted real estate partner,
+                recognized for our ability to match individuals and businesses
+                with spaces that don&apos;t just meet their needs—but elevate
+                their potential and shape their success stories.
               </p>
             </div>
           </div>

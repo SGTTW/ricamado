@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function PropertyHero() {
   return (
-    <section className="relative bg-blue-600 text-white py-20">
+    <section className="relative bg-blue-500 text-white py-20">
       <div className="absolute inset-0 bg-black/30">
         <Image
           src="/images/properties/properties/photo-1722286693917-1413cc95ff30.avif"
