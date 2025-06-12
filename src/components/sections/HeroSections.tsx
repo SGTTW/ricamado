@@ -53,8 +53,23 @@ const HeroSection = () => {
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-6 text-white text-center">
         <motion.div variants={textVariants} initial="initial" animate="animate">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          {/* <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight  ">
             Your Space, Your Story, Your Potential
+          </h1> */}
+
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <span className="block sm:hidden">
+              {/* For screens smaller than 640px (including 375px) */}
+              Your Space,
+              <br />
+              Your Story,
+              <br />
+              Your Potential
+            </span>
+            <span className="hidden sm:block">
+              {/* For screens 640px and larger */}
+              Your Space, Your Story, Your Potential
+            </span>
           </h1>
           <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
             We don&apos;t just find properties. We unlock life-changing
