@@ -250,6 +250,15 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 }) => {
   const { toggleLike, isLiked } = useLikedProperties();
 
+  // helper function to truncate text after specific number of words
+  const truncateText = (text: string, wordLimit: number): string => {
+    const words = text.split(" ");
+    if (words.length <= wordLimit) {
+      return text;
+    }
+    return words.slice(0, wordLimit).join(" ") + "...";
+  };
+
   return (
     <motion.div
       className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
@@ -358,7 +367,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 
           <div className="mb-4">
             <p className="text-sm text-gray-500 italic">
-              {property.description}
+              {truncateText(property.description, 20)}
             </p>
           </div>
 
