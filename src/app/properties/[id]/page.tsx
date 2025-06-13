@@ -146,8 +146,8 @@ export default function PropertyDetailsPage({
           </div>
 
           <div className="p-6 md:p-8">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-              <div className="mb-4 md:mb-0 flex-grow">
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6">
+              <div className="mb-4 lg:mb-0 flex-grow">
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
                   {property.title}
                 </h1>
@@ -228,8 +228,8 @@ export default function PropertyDetailsPage({
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="md:col-span-2">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="lg:col-span-2">
                 <div className="mb-8">
                   <h2 className="text-xl font-bold mb-3">Description</h2>
                   <p className="text-gray-600">{property.description}</p>
@@ -244,7 +244,7 @@ export default function PropertyDetailsPage({
 
                 <div className="mb-8">
                   <h2 className="text-xl font-bold mb-3">Features</h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     {property.features.map((feature, index) => (
                       <p key={index} className="text-gray-600">
                         • {feature}
@@ -277,7 +277,7 @@ export default function PropertyDetailsPage({
                 {property.amenities && property.amenities.length > 0 && (
                   <div className="mb-8">
                     <h2 className="text-xl font-bold mb-3">Amenities</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                       {property.amenities?.map((amenity, index) => (
                         <p key={index} className="text-gray-600">
                           • {amenity}
@@ -288,8 +288,8 @@ export default function PropertyDetailsPage({
                 )}
               </div>
 
-              <div className="md:col-span-1">
-                <div className="bg-gray-50 p-6 rounded-lg sticky top-4">
+              <div className="lg:col-span-1">
+                <div className="bg-gray-50 p-6 rounded-lg sticky lg:top-4">
                   <ContactAgentForm
                     propertyTitle={property.title}
                     propertyTags={property.tags}

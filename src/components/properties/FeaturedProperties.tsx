@@ -138,7 +138,7 @@ const FeaturedProperties = () => {
         </div>
 
         {/* Desktop Grid */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8">
+        <div className="hidden lg:grid lg:grid-cols-3 gap-8">
           {featuredProperties.map((property) => (
             <PropertyCard
               key={property.id}
@@ -153,8 +153,8 @@ const FeaturedProperties = () => {
           ))}
         </div>
 
-        {/* Mobile Swipe Container */}
-        <div className="md:hidden relative">
+        {/* Mobile & Tablet Swipe Container */}
+        <div className="lg:hidden relative">
           <div
             ref={scrollContainerRef}
             className="flex overflow-x-auto scrollbar-hide gap-6 pb-4"
@@ -164,7 +164,7 @@ const FeaturedProperties = () => {
             {featuredProperties.map((property) => (
               <div
                 key={property.id}
-                className="flex-shrink-0 w-80"
+                className="flex-shrink-0 w-80 md:w-96"
                 style={{ scrollSnapAlign: "start" }}
               >
                 <PropertyCard

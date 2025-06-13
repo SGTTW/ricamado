@@ -58,7 +58,7 @@ const HeroSection = () => {
           </h1> */}
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            <span className="block sm:hidden">
+            <span className="block sm:hidden mt-16">
               {/* For screens smaller than 640px (including 375px) */}
               Your Space,
               <br />
