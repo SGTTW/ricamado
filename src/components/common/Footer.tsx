@@ -118,7 +118,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Branding & Mission */}
           <div>
             <div className="flex items-center flex-shrink mb-2">
@@ -176,7 +176,7 @@ export default function Footer() {
           ))}
 
           {/* Newsletter & Social */}
-          <div>
+          <div className="md:w-80 lg:w-auto">
             <h3 className="font-semibold mb-4 text-lg">Stay Connected</h3>
 
             {/* Newsletter Signup */}
