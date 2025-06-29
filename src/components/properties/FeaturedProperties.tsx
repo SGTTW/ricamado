@@ -342,7 +342,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         <div className="p-6">
           <div className="flex justify-between items-start mb-4">
             <h3 className="text-2xl font-semibold text-gray-800 flex-1 mr-2">
-              {property.title}
+             {property.title}
             </h3>
             {/* Like Button */}
             <Heart

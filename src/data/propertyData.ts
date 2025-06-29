@@ -152,6 +152,72 @@ const properties: Property[] = [
     ],
   },
 
+  // filling station, New Oko-Oba, Abule Egba, Lagos
+  {
+    id: "ed5c09c16-0fca-48c7-8fcc-08a39f60c4ee",
+    title: "Filling Station",
+    location: "New Oko-Oba, Abule Egba, Lagos",
+    price: "₦950,000,000",
+    description:
+      "Filling station located in New Oko-Oba, Abule Egba, Lagos. This property is available for bidding",
+    features: [
+      "Mega Petrol Station of 14 pumps with Gas plant",
+      "Shopping mall on 4 plots of land",
+      "DPR Approval",
+      "State Approval",
+      "Bakery",
+      "Gym",
+      "Car Wash",
+      "Mosque",
+    ],
+    image:
+      "/images/properties/filling_stations/oko-oba filling station/WhatsApp Image 2025-06-28 at 08.46.01_be474809.jpg",
+    images: [
+      "/images/properties/filling_stations/oko-oba filling station/WhatsApp Image 2025-06-28 at 08.46.01_be474809.jpg",
+    ],
+    videos: [
+      "/images/properties/filling_stations/oko-oba filling station/WhatsApp Video 2025-06-28 at 08.45.12_8280b5c8.mp4",
+    ],
+    label: "SALE",
+    amenities: [
+      "High Capacity Fuel Pumps",
+      "Fire Safety Systems",
+      "Easy Access to Major Roads",
+    ],
+    askingPrice: ["₦950,000,000 (Nine Hundred and Fifty Million Naira) net"],
+    tags: ["Just In", "Sale"],
+    documents: ["Certificate of Occupancy (C of O)"],
+  },
+
+  // ikorodu landed property
+  {
+    id: "ed5c0c716-0fca-48c7-8fcc-08a39f60c4ee",
+    title: "Plot 40 Ikorodu Ind. Estate",
+    location: "Ikorodu, Lagos",
+    price: "₦300,000,000",
+    description:
+      "Plot 40 Ikorodu Industrial Estate, Celestial b/s Odogunyan Ikorodu, behind PZ industries, close to army barracks, Lagos",
+    features: [
+      "Located in Ikorodu Lagos State",
+      "Negotiable price",
+      "Secure location",
+    ],
+    image: "/images/properties/ikorodu/ikd_land.png",
+    images: ["/images/properties/ikorodu/ikd_land.png"],
+    videos: [
+      "/images/properties/ikorodu/WhatsApp Video 2025-06-27 at 21.37.33_2ea56200.mp4",
+      "/images/properties/ikorodu/WhatsApp Video 2025-06-27 at 21.37.33_ab5c9700.mp4",
+    ],
+    label: "",
+    amenities: [
+      "Strategic location within Ikorodu",
+      "Investment opportunity with growth potential",
+      "Easy access to major roads and industries",
+    ],
+    askingPrice: ["₦300,000,000 (Three Hundred Million Naira)"],
+    tags: ["Just In","Sale","Investment" ],
+  },
+
   // 3 Bedroom Flats, Akowonjo, Lagos
   {
     id: "ed57c0c16-0fca-48c7-8fcc-08a39f60c4ee",
@@ -203,78 +269,6 @@ const properties: Property[] = [
     askingPrice: ["₦200,000 (Two Hundred Thousand Naira) (Negotiable)"],
     tags: ["Just In", "Rent"],
   },
-
-  // {
-  //   id: "ed5c09c16-0fca-48c7-8fcc-08a39f60c4ee",
-  //   title: "Government Quarters",
-  //   location: "Kuje, Abuja",
-  //   price: "₦200,000,000 (Negotiable)",
-  //   description:
-  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-  //   features: [
-  //     "Located in Kuje Area Council",
-  //     "Bidding starts at ₦200M",
-  //     "Negotiable price",
-  //     "Government approved",
-  //     "Secure location",
-  //   ],
-  //   image: "/images/properties/akowonjo/Screenshot_1.png",
-  //   images: [
-  //     "/images/properties/akowonjo/Screenshot_1.png",
-  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
-  //   ],
-  //   videos: [
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //   ],
-  //   label: "SALE",
-  //   amenities: [
-  //     "Ideal for government officials and civil servants",
-  //     "Strategic location within Abuja",
-  //     "Investment opportunity with growth potential",
-  //   ],
-  //   reasonForSale: "Government divestment of non-essential assets",
-  //   askingPrice: ["₦200,000,000"],
-  //   tags: ["Sale", "Just In"],
-  // },
-
-  // {
-  //   id: "ed5c0c716-0fca-48c7-8fcc-08a39f60c4ee",
-  //   title: "Government Quarters",
-  //   location: "Kuje, Abuja",
-  //   price: "₦200,000,000 (Negotiable)",
-  //   description:
-  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-  //   features: [
-  //     "Located in Kuje Area Council",
-  //     "Bidding starts at ₦200M",
-  //     "Negotiable price",
-  //     "Government approved",
-  //     "Secure location",
-  //   ],
-  //   image: "/images/properties/akowonjo/Screenshot_1.png",
-  //   images: [
-  //     "/images/properties/akowonjo/Screenshot_1.png",
-  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
-  //   ],
-  //   videos: [
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //   ],
-  //   label: "SALE",
-  //   amenities: [
-  //     "Ideal for government officials and civil servants",
-  //     "Strategic location within Abuja",
-  //     "Investment opportunity with growth potential",
-  //   ],
-  //   reasonForSale: "Government divestment of non-essential assets",
-  //   askingPrice: ["₦200,000,000"],
-  //   tags: ["Sale", "Just In"],
-  // },
 
   // {
   //   id: "ed5c30c16-0fca-48c7-8fcc-08a39f60c4ee",
