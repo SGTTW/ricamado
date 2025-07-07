@@ -23,7 +23,7 @@ const properties: Property[] = [
       "/images/properties/kuje_abuja/kuje_house_2.mp4",
       "/images/properties/kuje_abuja/kuje_house_video.mp4",
     ],
-    label: "SALE",
+
     amenities: [
       "Ideal for government officials and civil servants",
       "Strategic location within Abuja",
@@ -65,7 +65,7 @@ const properties: Property[] = [
       "/images/properties/fagba_ifk_ijy/WhatsApp Image 2025-03-13 at 22.11.15_9754264f.jpg",
     ],
     videos: [],
-    label: "",
+
     amenities: [
       " Good Neighborhood",
       " Secured Estate",
@@ -101,7 +101,7 @@ const properties: Property[] = [
       "/images/properties/ifako_ijaiye/WhatsApp Image 2025-03-13 at 21.48.04_093473b4.jpg",
     ],
     videos: [],
-    label: "SALE",
+
     amenities: [
       "Spacious parking for up to 8 cars",
       "Fully interlocked compound",
@@ -111,6 +111,42 @@ const properties: Property[] = [
     askingPrice: ["₦120,000,000 (One Hundred and Twenty Million Naira)"],
     tags: ["Just In", "Sale"],
     documents: ["Global C of O, R&S"],
+  },
+
+  //  // 8 acres of Land, Ijoko Road, Sango, Ogun State
+  {
+    id: "ed5c08c16-0fca-48c7-8fcc-08a39f60c4ee",
+    title: "8 acres of Land",
+    location: "Ijoko Road, near Meros Company, Sango, Ogun State",
+    price: "₦3,500,000,000 (Net)",
+    documents: ["Certificate of Occupancy (C of O)"],
+    landSize: "8 acres",
+    description:
+      "Spanning ten acres, this prime land is strategically located along Ijoko Road near Meros Company in Sango. With a registered Certificate of Occupancy (C of O), the property is ideal for large-scale residential or commercial development projects, industrial parks, or investment holdings.",
+    features: [
+      "8 acres of land",
+      "Located on Ijoko Road, Sango",
+      "Proximity to Meros Company",
+      "Ideal for residential, commercial, or industrial development",
+      "Titled with C of O",
+    ],
+
+    image: "/images/properties/ijoko_sango/Screenshot_1.png",
+    images: ["/images/properties/ijoko_sango/Screenshot_1.png"],
+    videos: ["/images/properties/ijoko_sango/VID-20250706-WA0002.mp4"],
+    amenities: [
+      "Strategic location for development",
+      "High potential for appreciation",
+      "Easy access to major roads and transport links",
+      "Secure and well-documented land",
+      "Ideal for large-scale projects or investment holdings",
+      "Commeercial",
+      "Industrial",
+      "Residential",
+    ],
+    reasonForSale: "Government divestment of non-essential assets",
+    askingPrice: ["₦3,500,000,000 (Three Billion Five Hundred Million Naira)"],
+    tags: ["Sale", "Commercial", "Industrial"],
   },
 
   // Shopping Complex, Abule Egba, Lagos
@@ -136,7 +172,7 @@ const properties: Property[] = [
     videos: [
       "/images/properties/shopping_complex_abule_egba/shoppingComplexAtAbuleEgba.mp4",
     ],
-    label: "SALE",
+
     documents: ["Certificate of Occupancy (C of O)"],
 
     askingPrice: ["₦400,000,000 (Four Hundred Million Naira)"],
@@ -178,7 +214,7 @@ const properties: Property[] = [
     videos: [
       "/images/properties/filling_stations/oko-oba filling station/WhatsApp Video 2025-06-28 at 08.45.12_8280b5c8.mp4",
     ],
-    label: "SALE",
+
     amenities: [
       "High Capacity Fuel Pumps",
       "Fire Safety Systems",
@@ -208,14 +244,45 @@ const properties: Property[] = [
       "/images/properties/ikorodu/WhatsApp Video 2025-06-27 at 21.37.33_2ea56200.mp4",
       "/images/properties/ikorodu/WhatsApp Video 2025-06-27 at 21.37.33_ab5c9700.mp4",
     ],
-    label: "",
+
     amenities: [
       "Strategic location within Ikorodu",
       "Investment opportunity with growth potential",
       "Easy access to major roads and industries",
     ],
     askingPrice: ["₦300,000,000 (Three Hundred Million Naira)"],
-    tags: ["Just In","Sale","Investment" ],
+    tags: ["Just In", "Sale", "Investment"],
+  },
+
+  // awori abule egba
+  {
+    id: "ed5c30c16-0fca-48c7-8fcc-08a39f60c4ee",
+    title: "2 Plots with Building",
+    location: "Awori Bus Stop, Abule Egba, Lagos",
+    price: "₦600,000,000",
+    description:
+      "2 plots of land with a building facing the tarred road. Ideal for commercial purposes.",
+    features: [
+      "Located in a commercial area",
+      "Good road frontage",
+      "Negotiable price",
+      "Government approved",
+      "Secure location",
+    ],
+    image:
+      "/images/properties/awori_abule_egba/WhatsApp Image 2025-07-07 at 05.07.08_8f91bf18.jpg",
+    images: [
+      "/images/properties/awori_abule_egba/WhatsApp Image 2025-07-07 at 05.07.08_8f91bf18.jpg",
+    ],
+    videos: ["/images/properties/awori_abule_egba/VID-20250706-WA0006.mp4"],
+    amenities: [
+      "Directly on tared road",
+      "Prime location for commercial activities",
+      "Easy access to major roads and transport",
+      "Investment opportunity with growth potential",
+    ],
+    askingPrice: ["₦600,000,000 (Six Hundred Million Naira)"],
+    tags: ["Sale", "Just In", "Commercial"],
   },
 
   // 3 Bedroom Flats, Akowonjo, Lagos
@@ -240,7 +307,7 @@ const properties: Property[] = [
       "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
     ],
     documents: ["Certificate of Occupancy (C of O)"],
-    label: "SALE",
+
     amenities: [
       "Proximity to Major Roads",
       "Good Rental Value",
@@ -265,83 +332,10 @@ const properties: Property[] = [
     videos: [
       "/images/properties/yah_lateef/WhatsApp Video 2025-03-18 at 17.46.29_f3045936.mp4",
     ],
-    label: "",
+
     askingPrice: ["₦200,000 (Two Hundred Thousand Naira) (Negotiable)"],
     tags: ["Just In", "Rent"],
   },
-
-  // {
-  //   id: "ed5c30c16-0fca-48c7-8fcc-08a39f60c4ee",
-  //   title: "Government Quarters",
-  //   location: "Kuje, Abuja",
-  //   price: "₦200,000,000 (Negotiable)",
-  //   description:
-  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-  //   features: [
-  //     "Located in Kuje Area Council",
-  //     "Bidding starts at ₦200M",
-  //     "Negotiable price",
-  //     "Government approved",
-  //     "Secure location",
-  //   ],
-  //   image: "/images/properties/akowonjo/Screenshot_1.png",
-  //   images: [
-  //     "/images/properties/akowonjo/Screenshot_1.png",
-  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
-  //   ],
-  //   videos: [
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //   ],
-  //   label: "SALE",
-  //   amenities: [
-  //     "Ideal for government officials and civil servants",
-  //     "Strategic location within Abuja",
-  //     "Investment opportunity with growth potential",
-  //   ],
-  //   reasonForSale: "Government divestment of non-essential assets",
-  //   askingPrice: ["₦200,000,000"],
-
-  //   tags: ["Sale", "Just In"],
-  // },
-
-  // {
-  //   id: "ed5c10c16-0fca-48c7-8fcc-08a39f60c4ee",
-  //   title: "Government Quarters",
-  //   location: "Kuje, Abuja",
-  //   price: "₦200,000,000 (Negotiable)",
-  //   description:
-  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-  //   features: [
-  //     "Located in Kuje Area Council",
-  //     "Bidding starts at ₦200M",
-  //     "Negotiable price",
-  //     "Government approved",
-  //     "Secure location",
-  //   ],
-  //   image: "/images/properties/akowonjo/Screenshot_1.png",
-  //   images: [
-  //     "/images/properties/akowonjo/Screenshot_1.png",
-  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
-  //   ],
-  //   videos: [
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //   ],
-  //   label: "SALE",
-  //   amenities: [
-  //     "Ideal for government officials and civil servants",
-  //     "Strategic location within Abuja",
-  //     "Investment opportunity with growth potential",
-  //   ],
-  //   reasonForSale: "Government divestment of non-essential assets",
-  //   askingPrice: ["₦200,000,000"],
-  //   tags: ["Sale", "Just In"],
-  // },
 
   // {
   //   id: "ed5c01c16-0fca-48c7-8fcc-08a39f60c4ee",
@@ -368,7 +362,7 @@ const properties: Property[] = [
   //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
   //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
   //   ],
-  //   label: "SALE",
+  //
   //   amenities: [
   //     "Ideal for government officials and civil servants",
   //     "Strategic location within Abuja",

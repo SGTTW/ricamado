@@ -43,6 +43,9 @@ const FeaturedProperties = () => {
     Investment: "bg-indigo-100 text-indigo-800",
     Sold: "bg-slate-100 text-slate-800",
     Rented: "bg-violet-100 text-violet-800",
+    Commercial: "bg-amber-100 text-amber-800",
+    Residential: "bg-lime-100 text-lime-800",
+    Industrial: "bg-cyan-100 text-cyan-800",
   };
 
   // add scroll handler to detect user interaction

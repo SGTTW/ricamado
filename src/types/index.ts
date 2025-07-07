@@ -14,9 +14,13 @@ export type PropertyTag =
   | "Investment"
   | "Innovation"
   | "Sold"
-  | "Rented";
+  | "Rented"
+  | "Commercial"
+  | "Residential"
+  | "Industrial";
 
 export interface Property {
+  amenities?: string[];
   askingPrice?: string[];
   description: string;
   documents?: string[];
@@ -24,15 +28,13 @@ export interface Property {
   id: string;
   image: string;
   images: string[];
-  label: string;
   landSize?: string;
   location: string;
   price: string;
-  amenities?: string[];
   reasonForSale?: string;
+  tags: PropertyTag[];
   title: string;
   videos?: string[];
-  tags: PropertyTag[];
 }
 
 export interface Testimonial {
