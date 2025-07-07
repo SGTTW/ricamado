@@ -223,9 +223,9 @@ const PropertySearch = ({
                       </p>
                     </div>
                     <div className="flex items-center mt-1">
-                      <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-2">
+                      {/* <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-2">
                         {property.label}
-                      </span>
+                      </span> */}
                       <p className="text-sm font-medium">{property.price}</p>
                     </div>
                   </div>
