@@ -285,6 +285,73 @@ const properties: Property[] = [
     tags: ["Sale", "Just In", "Commercial"],
   },
 
+  // Property for Sale in Lagos
+  {
+    id: "ed5c01c16-0fca-48c7-8fcc-08a39f60c4ce",
+    title: "Property for Sale in Lagos",
+    location: "Jibowu, Yaba, Lagos",
+    price: "₦165,000,000",
+    description:
+      "Property for sale located in Jibowu, Yaba, Lagos. All documents are intact and ready.",
+    features: [
+      "All documents are intact and ready",
+      "Prime location in Yaba",
+      "Strategic Lagos location",
+      "Investment opportunity",
+    ],
+    image:
+      "/images/properties/jibowu_yaba/WhatsApp Image 2025-07-13 at 13.37.17_ef51c868.jpg",
+    images: [
+      "/images/properties/jibowu_yaba/WhatsApp Image 2025-07-13 at 13.37.17_ef51c868.jpg",
+    ],
+    videos: [],
+    amenities: [
+      "Complete documentation",
+      "Prime Yaba location",
+      "Easy access to major roads",
+      "Commercial and residential proximity",
+    ],
+ 
+    askingPrice: ["₦165,000,000 (One Hundred and Sixty-Five Million Naira)"],
+    tags: ["Just In", "Sale"],
+  },
+
+  // // An Acre of Land (6 Plots), Awolowo Way, Lagos
+  {
+    id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c4ee",
+    title: "An Acre of Land (6 Plots)",
+    location: "Awolowo Way by Radio Junction",
+    price: "₦800,000,000",
+    description:
+      "An acre of land comprising 6 plots fenced together with verifiable documents. Complete with family deed of assignment, receipt and registered survey located at Awolowo way by Radio junction.",
+    features: [
+      "6 plots fenced together",
+      "Verifiable documents available",
+      "Family deed of assignment included",
+      "Receipt available",
+      "Registered survey completed",
+      "Prime Awolowo Way location",
+    ],
+    image: "/images/properties/awolowo_way/Screenshot_9.png",
+    images: ["/images/properties/awolowo_way/Screenshot_9.png"],
+    videos: [
+      "/images/properties/awolowo_way/WhatsApp Video 2025-07-20 at 20.50.51_b999bcf3.mp4",
+    ],
+    // landSize: "1 acre (6 plots)",
+    amenities: [
+      "Strategic location near Radio Junction",
+      "Complete documentation",
+      "Fenced and secured",
+      "Investment ready",
+      "Commercial potential",
+    ],
+    // reasonForSale: "Family investment divestment",
+    askingPrice: ["₦800,000,000 (Eight Hundred Million Naira)"],
+    tags: ["Just In", "Sale", "Investment"],
+  },
+
+  
+
   // 3 Bedroom Flats, Akowonjo, Lagos
   {
     id: "ed57c0c16-0fca-48c7-8fcc-08a39f60c4ee",
@@ -336,43 +403,6 @@ const properties: Property[] = [
     askingPrice: ["₦200,000 (Two Hundred Thousand Naira) (Negotiable)"],
     tags: ["Just In", "Rent"],
   },
-
-  // {
-  //   id: "ed5c01c16-0fca-48c7-8fcc-08a39f60c4ee",
-  //   title: "Government Quarters",
-  //   location: "Kuje, Abuja",
-  //   price: "₦200,000,000 (Negotiable)",
-  //   description:
-  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-  //   features: [
-  //     "Located in Kuje Area Council",
-  //     "Bidding starts at ₦200M",
-  //     "Negotiable price",
-  //     "Government approved",
-  //     "Secure location",
-  //   ],
-  //   image: "/images/properties/akowonjo/Screenshot_1.png",
-  //   images: [
-  //     "/images/properties/akowonjo/Screenshot_1.png",
-  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
-
-  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
-  //   ],
-  //   videos: [
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //   ],
-  //
-  //   amenities: [
-  //     "Ideal for government officials and civil servants",
-  //     "Strategic location within Abuja",
-  //     "Investment opportunity with growth potential",
-  //   ],
-  //   reasonForSale: "Government divestment of non-essential assets",
-  //   askingPrice: ["₦200,000,000"],
-
-  //   tags: ["Sale", "Just In"],
-  // },
 
   // {
   //   id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c4ee",
