@@ -11,14 +11,14 @@ export const typesenseClient = new Typesense.Client({
       protocol: process.env.TYPESENSE_PROTOCOL || 'https',
     },
   ],
-  apiKey: process.env.TYPESENSE_SEARCH_API_KEY || 'UVCTECUw6DoL7khtoFcAAUozKT3cba8b', // Use search-only API key
+  apiKey: process.env.TYPESENSE_SEARCH_API_KEY || '8NoadTJYbs8QYm0HNx0zeBDGEZNQj9T3', // Use search-only API key
   connectionTimeoutSeconds: 60,
 });
 
 // Initialize the InstantSearch adapter
 export const searchClient = new TypesenseInstantSearchAdapter({
   server: {
-    apiKey: process.env.TYPESENSE_SEARCH_API_KEY || 'UVCTECUw6DoL7khtoFcAAUozKT3cba8b',
+    apiKey: process.env.TYPESENSE_SEARCH_API_KEY || '8NoadTJYbs8QYm0HNx0zeBDGEZNQj9T3',
     nodes: [
       {
         host: process.env.TYPESENSE_HOST || 'fsz6l2n31kw0bugcp-1.a1.typesense.net',

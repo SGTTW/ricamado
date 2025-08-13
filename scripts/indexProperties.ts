@@ -13,7 +13,7 @@ const client = new Typesense.Client({
       protocol: "https",
     },
   ],
-  apiKey: process.env.TYPESENSE_ADMIN_KEY || "VnIpF2fUJgWMWv155o6SYnlnFHvIQJED",
+  apiKey: process.env.TYPESENSE_ADMIN_KEY || "HiKYr4P4nZ74JCA6Rh8pyLQwg0FnI7DP",
   connectionTimeoutSeconds: 60,
 });
 
