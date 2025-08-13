@@ -22,7 +22,7 @@ async function run() {
     console.log("🚀 Starting Typesense collection setup...");
 
     // Check if the collection already exists
-    await client.collections("properties").retrieve();
+    // await client.collections("properties").retrieve();
 
     // await client.collections("properties").delete();
 
@@ -61,4 +61,4 @@ async function run() {
 run();
 
 
-// npx run index-properties
+// npm run index-properties -
