@@ -8,12 +8,12 @@ const client = new Typesense.Client({
   nodes: [
     {
       host:
-        process.env.TYPESENSE_HOST || "wpeqa7j23sfx9izrp-1.a1.typesense.net",
+      process.env.TYPESENSE_HOST || "fsz6l2n31kw0bugcp-1.a1.typesense.net",
       port: 443,
       protocol: "https",
     },
   ],
-  apiKey: process.env.TYPESENSE_ADMIN_KEY || "6cVzGqfBnOSTUIUhGfFjpQ6BdIjjXZhv",
+  apiKey: process.env.TYPESENSE_ADMIN_KEY || "VnIpF2fUJgWMWv155o6SYnlnFHvIQJED",
   connectionTimeoutSeconds: 60,
 });
 
@@ -59,3 +59,6 @@ async function run() {
 }
 
 run();
+
+
+// npx run index-properties
