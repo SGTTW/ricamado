@@ -144,7 +144,7 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-blue-500" />
                 <span>
-                  <a href="mailto:info@ricamado.com">info@ricamado.com</a>
+                  <a href="mailto:info@ricamado.com">info@ricamado.com.ng</a>
                 </span>
               </div>
               <div className="flex items-center space-x-2">

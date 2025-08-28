@@ -55,10 +55,10 @@ const PrivacyContent = () => {
         <p>
           You may request access, correction, or deletion of your data at{" "}
           <a
-            href="mailto:privacy@ricamado.com"
+            href="mailto:privacy@ricamado.com.ng"
             className="text-blue-600 hover:underline"
           >
-            privacy@ricamado.com
+            privacy@ricamado.com.ng
           </a>
         </p>
       </section>

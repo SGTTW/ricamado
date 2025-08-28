@@ -49,10 +49,10 @@ const TermsContent = () => {
         <p>
           For questions about these Terms, contact us at{" "}
           <a
-            href="mailto:legal@ricamado.com"
+            href="mailto:legal@ricamado.com.ng"
             className="text-blue-600 hover:underline"
           >
-            legal@ricamado.com
+            legal@ricamado.com.ng
           </a>
         </p>
       </section>
