@@ -44,7 +44,7 @@ const FOOTER_LINKS = {
     { label: "About Us", href: "/about" },
   ],
   Support: [
-    { label: "Contact Us", href: "/contacts" },
+    { label: "Contact Us", href: "/contact" },
     { label: "Terms of Service", href: "/terms" },
     { label: "Privacy Policy", href: "/privacy" },
   ],
