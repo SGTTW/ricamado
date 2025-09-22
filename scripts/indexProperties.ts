@@ -8,12 +8,12 @@ const client = new Typesense.Client({
   nodes: [
     {
       host:
-      process.env.TYPESENSE_HOST || "fsz6l2n31kw0bugcp-1.a1.typesense.net",
+      process.env.TYPESENSE_HOST || "xv2uwpj4n0gfr8slp-1.a1.typesense.net",
       port: 443,
       protocol: "https",
     },
   ],
-  apiKey: process.env.TYPESENSE_ADMIN_KEY || "HiKYr4P4nZ74JCA6Rh8pyLQwg0FnI7DP",
+  apiKey: process.env.TYPESENSE_ADMIN_KEY || "vi6uNySaFFBptue64w8A5UUVGTZO4ntu",
   connectionTimeoutSeconds: 60,
 });
 
@@ -22,7 +22,7 @@ async function run() {
     console.log("🚀 Starting Typesense collection setup...");
 
     // Check if the collection already exists
-    // await client.collections("properties").retrieve();
+    // await client.collections("properties").retrieve(); 
 
     // await client.collections("properties").delete();
 
