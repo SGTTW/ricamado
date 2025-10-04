@@ -27,7 +27,7 @@ const SOCIAL_LINKS = [
   },
   {
     icon: Instagram,
-    href: "/",
+    href: "https://www.instagram.com/ricamadoul/",
     label: "Instagram",
   },
   {
