@@ -311,7 +311,7 @@ const properties: Property[] = [
       "Easy access to major roads",
       "Commercial and residential proximity",
     ],
- 
+
     askingPrice: ["₦165,000,000 (One Hundred and Sixty-Five Million Naira)"],
     tags: ["Just In", "Sale"],
   },
@@ -349,8 +349,6 @@ const properties: Property[] = [
     askingPrice: ["₦800,000,000 (Eight Hundred Million Naira)"],
     tags: ["Just In", "Sale", "Investment"],
   },
-
-  
 
   // 3 Bedroom Flats, Akowonjo, Lagos
   {
@@ -404,42 +402,39 @@ const properties: Property[] = [
     tags: ["Just In", "Rent"],
   },
 
-  // {
-  //   id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c4ee",
-  //   title: "Government Quarters",
-  //   location: "Kuje, Abuja",
-  //   price: "₦200,000,000 (Negotiable)",
-  //   description:
-  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-  //   features: [
-  //     "Located in Kuje Area Council",
-  //     "Bidding starts at ₦200M",
-  //     "Negotiable price",
-  //     "Government approved",
-  //     "Secure location",
-  //   ],
-  //   image: "/images/properties/akowonjo/Screenshot_1.png",
-  //   images: [
-  //     "/images/properties/akowonjo/Screenshot_1.png",
-  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
+  // st Matthew Daniel Land
+  {
+    id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c3ee",
+    title: "51 Acres of Land at St. Matthew Daniel, Mile 2",
+    location: "Mile 2, Lagos",
+    price: "₦20,000,000,000",
+    description:
+      "A vast 51-acre parcel of land situated at St. Matthew Daniel, Mile 2, Lagos. The property offers both inner and outer access points, suitable for large-scale commercial or industrial developments.",
+    features: [
+      "51 acres of dry land",
+      "Accessible from major routes in Mile 2",
+      "Suitable for commercial and industrial use",
+      "Perimeter fencing required",
+      "Presence of unauthorized occupants",
+    ],
+    image: "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
+    images: [
+      "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
+    ],
+    videos: [
+      "/images/properties/st_matthew_daniel/WhatsApp Video 2025-10-04 at 07.42.33_477530ee.mp4",
+    ],
+    // label: "SALE",
+    amenities: [
+      "Strategic urban location",
+      "Close to major transport corridors",
+      "Potential for large-scale development",
+    ],
+    reasonForSale: "",
+    askingPrice: ["₦20,000,000,000 (Twenty Billion Naira)"],
 
-  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
-  //   ],
-  //   videos: [
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //   ],
-  //   label: "SALE",
-  //   amenities: [
-  //     "Ideal for government officials and civil servants",
-  //     "Strategic location within Abuja",
-  //     "Investment opportunity with growth potential",
-  //   ],
-  //   reasonForSale: "Government divestment of non-essential assets",
-  //   askingPrice: ["₦200,000,000"],
-
-  //   tags: ["Sale", "Just In"],
-  // },
+    tags: ["Sale", "Just In"],
+  },
 
   // {
   //   id: "ed15c0c16-0fca-48c7-8fcc-08a39f60c4ee",
