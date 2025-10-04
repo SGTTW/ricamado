@@ -2,6 +2,43 @@
 import { Property } from "@/types/index";
 
 const properties: Property[] = [
+
+
+  
+  // st Matthew Daniel Land
+  {
+    id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c3ee",
+    title: "51 Acres of Land at Mile 2",
+    location: "Mile 2, Lagos",
+    price: "₦20,000,000,000",
+    description:
+      "A vast 51-acre parcel of land situated at St. Matthew Daniel, Mile 2, Lagos. The property offers both inner and outer access points, suitable for large-scale commercial or industrial developments.",
+    features: [
+      "51 acres of dry land",
+      "Accessible from major routes in Mile 2",
+      "Suitable for commercial and industrial use",
+      "Perimeter fencing required",
+      "Presence of unauthorized occupants",
+    ],
+    image: "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
+    images: [
+      "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
+    ],
+    videos: [
+      "/images/properties/st_matthew_daniel/WhatsApp Video 2025-10-04 at 07.42.33_477530ee.mp4",
+    ],
+    // label: "SALE",
+    amenities: [
+      "Strategic urban location",
+      "Close to major transport corridors",
+      "Potential for large-scale development",
+    ],
+    reasonForSale: "",
+    askingPrice: ["₦20,000,000,000 (Twenty Billion Naira)"],
+
+    tags: ["Sale", "Just In"],
+  },
+
   // Kuje abuja
   {
     id: "123e4567-e89b-12d3-a456-426614174000",
@@ -400,42 +437,7 @@ const properties: Property[] = [
 
     askingPrice: ["₦200,000 (Two Hundred Thousand Naira) (Negotiable)"],
     tags: ["Just In", "Rent"],
-  },
-
-  // st Matthew Daniel Land
-  {
-    id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c3ee",
-    title: "51 Acres of Land at St. Matthew Daniel, Mile 2",
-    location: "Mile 2, Lagos",
-    price: "₦20,000,000,000",
-    description:
-      "A vast 51-acre parcel of land situated at St. Matthew Daniel, Mile 2, Lagos. The property offers both inner and outer access points, suitable for large-scale commercial or industrial developments.",
-    features: [
-      "51 acres of dry land",
-      "Accessible from major routes in Mile 2",
-      "Suitable for commercial and industrial use",
-      "Perimeter fencing required",
-      "Presence of unauthorized occupants",
-    ],
-    image: "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
-    images: [
-      "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
-    ],
-    videos: [
-      "/images/properties/st_matthew_daniel/WhatsApp Video 2025-10-04 at 07.42.33_477530ee.mp4",
-    ],
-    // label: "SALE",
-    amenities: [
-      "Strategic urban location",
-      "Close to major transport corridors",
-      "Potential for large-scale development",
-    ],
-    reasonForSale: "",
-    askingPrice: ["₦20,000,000,000 (Twenty Billion Naira)"],
-
-    tags: ["Sale", "Just In"],
-  },
-
+  }
   // {
   //   id: "ed15c0c16-0fca-48c7-8fcc-08a39f60c4ee",
   //   title: "Government Quarters",
