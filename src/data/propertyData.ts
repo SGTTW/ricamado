@@ -2,9 +2,6 @@
 import { Property } from "@/types/index";
 
 const properties: Property[] = [
-
-
-  
   // st Matthew Daniel Land
   {
     id: "ed5c20c16-0fca-48c7-8fcc-08a39f60c3ee",
@@ -20,7 +17,8 @@ const properties: Property[] = [
       "Perimeter fencing required",
       "Presence of unauthorized occupants",
     ],
-    image: "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
+    image:
+      "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
     images: [
       "/images/properties/st_matthew_daniel/WhatsApp Image 2025-10-04 at 09.12.23_b5f16e76.jpg",
     ],
@@ -36,7 +34,7 @@ const properties: Property[] = [
     reasonForSale: "",
     askingPrice: ["₦20,000,000,000 (Twenty Billion Naira)"],
 
-    tags: ["Sale", "Just In"],
+    tags: ["Just In", "Sale"],
   },
 
   // Kuje abuja
@@ -437,7 +435,7 @@ const properties: Property[] = [
 
     askingPrice: ["₦200,000 (Two Hundred Thousand Naira) (Negotiable)"],
     tags: ["Just In", "Rent"],
-  }
+  },
   // {
   //   id: "ed15c0c16-0fca-48c7-8fcc-08a39f60c4ee",
   //   title: "Government Quarters",
