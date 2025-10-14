@@ -260,6 +260,100 @@ const properties: Property[] = [
     documents: ["Certificate of Occupancy (C of O)"],
   },
 
+  // mowe ofada
+  {
+    amenities: [
+      "Constant electricity",
+      "Proximity to major estates",
+      "Accessible road network",
+    ],
+    askingPrice: ["#80,000,000 (Eighty Million Naira)"],
+    description:
+      "A well-situated property located at Ashaya Elegbada after Ofada, nestled between Emerald Estate and Prime Estate. The area is popular, secure, and enjoys constant power supply — ideal for residential or investment purposes.",
+
+    features: [
+      "Close to developed estates",
+      "Serene environment",
+      "Electricity available",
+      "Partially completed structure",
+    ],
+    id: "ed5c0c16-0fca-48c7-8fcc-08a39f60c4ef",
+    image: "images/properties/mowe_ofada/image (1).png",
+    images: [
+      "/images/properties/mowe_ofada/images/image10.jpeg",
+
+      "/images/properties/mowe_ofada/image/image1.jpeg",
+      "/images/properties/mowe_ofada/image/image2.jpeg",
+      "/images/properties/mowe_ofada/image/image3.jpeg",
+      "/images/properties/mowe_ofada/image/image4.jpeg",
+
+      "/images/properties/mowe_ofada/image/image5.jpeg",
+      "/images/properties/mowe_ofada/image/image6.jpeg",
+
+      "/images/properties/mowe_ofada/images/image.jpeg",
+      "/images/properties/mowe_ofada/images/image1.jpeg",
+      "/images/properties/mowe_ofada/images/image2.jpeg",
+      "/images/properties/mowe_ofada/images/image3.jpeg",
+      "/images/properties/mowe_ofada/images/image4.jpeg",
+      "/images/properties/mowe_ofada/images/image5.jpeg",
+      "/images/properties/mowe_ofada/images/image6.jpeg",
+      "/images/properties/mowe_ofada/images/image7.jpeg",
+      "/images/properties/mowe_ofada/images/image8.jpeg",
+      "/images/properties/mowe_ofada/images/image9.jpeg",
+      "/images/properties/mowe_ofada/images/image11.jpeg",
+      "/images/properties/mowe_ofada/images/image12.jpeg",
+      "/images/properties/mowe_ofada/images/image13.jpeg",
+    ],
+    landSize: "Full plot",
+    location: "Ashaya Elegbada, After Ofada, Ogun State",
+    price: "₦80,000,000",
+    reasonForSale: "",
+    tags: ["Just In", "Sale", "Residential"],
+    title: "  Ashaya Elegbada ",
+    videos: [
+      "/images/properties/mowe_ofada/WhatsApp Video 2025-10-11 at 6.39.09 PM.mp4",
+    ],
+  },
+
+
+// 1 acre of Land with Existing Building, Mowe, Ogun State
+  {
+    id: "ed15c0c16-0fca-48c7-8fcc-08a39f60c4ee",
+    title: "1 acre of Land",
+    location: "Dalman Congress Road, Adenekan Estate, Mowe Bus Stop, Ogun State",
+    price: "₦200,000,000 (Negotiable)",
+    description:
+      "Spacious 1-acre land with an existing building located along Dalman Congress Road, within Adenekan Estate, Mowe Bus Stop, Ogun State. Ideal for residential, commercial, or mixed-use development in a rapidly growing area.",
+    features: [
+      "1 acre of land with existing structure",
+      "Located within a developed estate",
+      "Easy access via Congress Road",
+      "Suitable for multiple purposes",
+    ],
+    image: "/images/properties/mowe_adenekan_estate/image.png",
+    images: [
+      "/images/properties/mowe_adenekan_estate/image.png",
+      "/images/properties/mowe_adenekan_estate/government-quarters/exterior.jpg",
+
+      "/images/properties/akonwonjo/government-quarters/interior.jpg",
+    ],
+    videos: [
+      "/images/properties/mowe_adenekan_estate/WhatsApp Video 2025-10-11 at 8.08.36 PM.mp4",
+      "/images/properties/mowe_adenekan_estate/WhatsApp Video 2025-10-11 at 8.08.31 PM.mp4",
+      "/images/properties/mowe_adenekan_estate/WhatsApp Video 2025-10-11 at 8.08.33 PM.mp4",
+    ],
+
+    amenities: [
+      "Secure estate environment",
+      "Good road access",
+      "Electricity available",
+    ],
+    reasonForSale: " ",
+    askingPrice: ["₦200,000,000 (Two Hundred Million Naira) "],
+
+    tags: ["Just In", "Sale"],
+  },
+
   // ikorodu landed property
   {
     id: "ed5c0c716-0fca-48c7-8fcc-08a39f60c4ee",
@@ -436,43 +530,8 @@ const properties: Property[] = [
     askingPrice: ["₦200,000 (Two Hundred Thousand Naira) (Negotiable)"],
     tags: ["Just In", "Rent"],
   },
-  // {
-  //   id: "ed15c0c16-0fca-48c7-8fcc-08a39f60c4ee",
-  //   title: "Government Quarters",
-  //   location: "Kuje, Abuja",
-  //   price: "₦200,000,000 (Negotiable)",
-  //   description:
-  //     "Government quarters located in Kuje Area Council, Abuja. This property is available for bidding and the price is negotiable.",
-  //   features: [
-  //     "Located in Kuje Area Council",
-  //     "Bidding starts at ₦200M",
-  //     "Negotiable price",
-  //     "Government approved",
-  //     "Secure location",
-  //   ],
-  //   image: "/images/properties/akowonjo/Screenshot_1.png",
-  //   images: [
-  //     "/images/properties/akowonjo/Screenshot_1.png",
-  //     "/images/properties/akowonjo/government-quarters/exterior.jpg",
 
-  //     "/images/properties/akonwonjo/government-quarters/interior.jpg",
-  //   ],
-  //   videos: [
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //     "/images/properties/akowonjo/WhatsApp Video 2025-03-18 at 08.46.45_104b6d83.mp4",
-  //   ],
-  //   label: "SALE",
-  //   amenities: [
-  //     "Ideal for government officials and civil servants",
-  //     "Strategic location within Abuja",
-  //     "Investment opportunity with growth potential",
-  //   ],
-  //   reasonForSale: "Government divestment of non-essential assets",
-  //   askingPrice: ["₦200,000,000"],
-
-  //   tags: ["Sale", "Just In"],
-
-  // },
+  
 
   // ---------------------------------------
   // {

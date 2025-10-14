@@ -22,7 +22,7 @@ export type PropertyTag =
 export interface Property {
   amenities?: string[];
   askingPrice?: string[];
-  description: string;
+description: string;
   documents?: string[];
   features: string[];
   id: string;

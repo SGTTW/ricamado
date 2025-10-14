@@ -8,7 +8,7 @@ const client = new Typesense.Client({
   nodes: [
     {
       host:
-      process.env.TYPESENSE_HOST || "xv2uwpj4n0gfr8slp-1.a1.typesense.net",
+        process.env.TYPESENSE_HOST || "xv2uwpj4n0gfr8slp-1.a1.typesense.net",
       port: 443,
       protocol: "https",
     },
@@ -22,7 +22,7 @@ async function run() {
     console.log("🚀 Starting Typesense collection setup...");
 
     // Check if the collection already exists
-    // await client.collections("properties").retrieve(); 
+    // await client.collections("properties").retrieve();
 
     // await client.collections("properties").delete();
 
@@ -59,6 +59,5 @@ async function run() {
 }
 
 run();
-
 
 // npm run index-properties -

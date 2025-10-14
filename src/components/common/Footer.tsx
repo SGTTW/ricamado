@@ -37,7 +37,7 @@ const SOCIAL_LINKS = [
   },
 ];
 
-const FOOTER_LINKS = {
+const FOOTER_LINKS = { 
   Discover: [
     { label: "Home", href: "/" },
     { label: "Properties", href: "/properties" },
