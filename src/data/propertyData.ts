@@ -321,7 +321,7 @@ const properties: Property[] = [
     id: "ed15c0c16-0fca-48c7-8fcc-08a39f60c4ee",
     title: "1 acre of Land",
     location: "Dalman Congress Road, Adenekan Estate, Mowe Bus Stop, Ogun State",
-    price: "₦200,000,000 (Negotiable)",
+    price: "₦200,000,000",
     description:
       "Spacious 1-acre land with an existing building located along Dalman Congress Road, within Adenekan Estate, Mowe Bus Stop, Ogun State. Ideal for residential, commercial, or mixed-use development in a rapidly growing area.",
     features: [
