@@ -4,9 +4,11 @@
 import { useState } from "react";
 import { Property } from "@/types";
 import Link from "next/link";
-import { MapPin, ArrowRight } from "lucide-react";
+import { MapPin, ArrowRight } from "lucide-react"
+ 
 import { Heart, Forward } from "lucide-react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { useLikedProperties } from "@/hooks/useLikedProperties";
 interface PropertyListProps {
   properties: Property[];
@@ -94,6 +96,7 @@ const PropertyList = ({ properties, itemsPerPage = 6 }: PropertyListProps) => {
                 <img
                   src={property.image}
                   alt={property.title}
+                 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 {/* <span className="absolute top-4 left-4 bg-gray-600 text-white px-3 py-1 rounded-full text-xs font-medium">
@@ -161,8 +164,8 @@ const PropertyList = ({ properties, itemsPerPage = 6 }: PropertyListProps) => {
                       onClick={() => handleShare("Twitter", property)}
                       className="flex items-center px-3 py-2 hover:bg-gray-100 rounded text-sm whitespace-nowrap"
                     >
-                      <FaTwitter className="text-blue-400 mr-2" size={16} />
-                      Twitter
+                      <FaXTwitter className="text-blue-400 mr-2" size={16} />
+                      X
                     </button>
                     <button
                       onClick={() => handleShare("LinkedIn", property)}

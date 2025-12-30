@@ -37,11 +37,12 @@ const SOCIAL_LINKS = [
   },
 ];
 
-const FOOTER_LINKS = { 
+const FOOTER_LINKS = {
   Discover: [
     { label: "Home", href: "/" },
     { label: "Properties", href: "/properties" },
     { label: "About Us", href: "/about" },
+    { label: "Blog", href: "/blog" }
   ],
   Support: [
     { label: "Contact Us", href: "/contact" },

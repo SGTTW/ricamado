@@ -23,6 +23,12 @@ const NAV_ITEMS = [
     label: "About Us",
     description: "Our purpose and mission",
   },
+  // blogs
+  {
+    href: "/blog",
+    label: "Blog",
+    description: "Insights for intentional living",
+  }
   // {
   //   href: "/faqs",
   //   label: "FAQs",

@@ -16,6 +16,15 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #f1f1f1;
+} */
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* --background: #0a0a0a; */

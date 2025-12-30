@@ -429,7 +429,8 @@ import Link from "next/link";
 import { Property } from "@/types";
 import { typesenseClient } from "@/lib/typesenseClient";
 import ContactAgentModal from "./ContactAgentModal";
-// import Image from "next/image"
+ 
+ 
 
 interface PropertySearchProps {
   className?: string;

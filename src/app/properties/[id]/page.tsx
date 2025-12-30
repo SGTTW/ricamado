@@ -10,8 +10,7 @@ import PropertyGallery from "@/components/properties/PropertyGallery";
 import ContactAgentForm from "@/components/properties/ContactAgentForm";
 import { ArrowLeft, Share } from "lucide-react";
 import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
-import { RiTwitterXFill } from "react-icons/ri";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function PropertyDetailsPage({
   params,
@@ -202,11 +201,7 @@ export default function PropertyDetailsPage({
                         onClick={() => handleShare("Twitter")}
                         className="flex items-center w-full px-3 py-2 hover:bg-gray-100 rounded text-sm"
                       >
-                        <RiTwitterXFill
-                          className="text-blue-400 mr-2"
-                          size={16}
-                        />
-                        X
+                        <FaXTwitter className="text-blue-400 mr-2" size={16} />X
                       </button>
                       <button
                         onClick={() => handleShare("LinkedIn")}

@@ -55,3 +55,19 @@ export const COMPANY_INFO = {
   mission:
     "Reimagining real estate as a catalyst for personal and community growth.",
 };
+
+
+// add blog post typeexport interface BlogPost {
+export interface BlogPost {
+  id: string;
+  title: string;
+  author: string;
+  date: string;
+  readTime: string;
+  excerpt: string;
+  content: string;
+  image: string;
+  images: string[];
+  videos?: string[];
+  category?: string;
+}

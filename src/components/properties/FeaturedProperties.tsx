@@ -1,6 +1,8 @@
 // src/components/properties/FeaturedProperties.tsx
 "use client";
 
+
+
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -13,10 +15,13 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { RiTwitterXFill } from "react-icons/ri";
+import {FaXTwitter} from "react-icons/fa6";
 import properties from "@/data/propertyData";
 import { Property, PropertyTag } from "@/types/index";
 import { useLikedProperties } from "@/hooks/useLikedProperties";
+ 
+
+
 
 const featuredProperties = properties.slice(0, 3);
 
@@ -320,7 +325,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
                   onClick={() => handleShare("Twitter", property)}
                   className="flex items-center px-3 py-2 hover:bg-gray-100 rounded text-sm"
                 >
-                  <RiTwitterXFill className="text-blue-400 mr-2" size={16} />X{" "}
+                  <FaXTwitter className="text-blue-400 mr-2" size={16} />X{" "}
                 </button>
                 <button
                   onClick={() => handleShare("LinkedIn", property)}

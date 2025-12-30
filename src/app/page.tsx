@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import WhyRicamado from "@/components/sections/WhyRicamado";
 import { faqs } from "@/lib/faqs";
 import CTA from "@/components/sections/CTA";
+import ScrollReveal from "@/components/animation/ScrollReveal";
 
 // SEO Optimization
 export const metadata: Metadata = {
@@ -109,23 +110,33 @@ export default function HomePage() {
         </section>
 
         <section aria-label="why ricamado">
-          <WhyRicamado />
+          <ScrollReveal direction="up" delay={0.1}>
+            <WhyRicamado />
+          </ScrollReveal>
         </section>
 
         <section aria-label="featured properties">
+          <ScrollReveal direction="up" delay={0.1}>
           <FeaturedProperties />
+          </ScrollReveal>
         </section>
 
         <section aria-label="testimonials">
+           <ScrollReveal direction="up" delay={0.1}>
           <ClientTestimonials />
+          </ScrollReveal>
         </section>
 
         <section aria-label="frequently asked questions">
+          <ScrollReveal direction="up" delay={0.1}>
           <FaqsSection faqs={faqs} />
+          </ScrollReveal>
         </section>
 
         <section aria-label="contact us">
+          <ScrollReveal direction="up" delay={0.1}>
           <CTA />
+          </ScrollReveal>
         </section>
       </div>
     </>
