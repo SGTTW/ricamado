@@ -126,12 +126,12 @@ export default function ContactForm() {
                 Phone Number
               </label>
               <div className="flex">
-                <div className="inline-flex items-center px-3 py-2 text-sm text-gray-900 bg-gray-100 border border-r-0 border-gray-300 rounded-l-md">
+                <div className="inline-flex items-center px-3 py-2 text-sm text-gray-900 bg-gray-100 border border-r-0 border-gray-300 rounded-l-md min-w-[100px] sm:min-w-[120px]">
                   <select
                     name="country"
                     value={formData.country}
                     onChange={handleChange}
-                    className="bg-gray-100 focus:ring-blue-500 focus:border-blue-500 mr-1"
+                    className="bg-gray-100 focus:ring-blue-500 focus:border-blue-500 mr-1 text-xs sm:text-sm w-full"
                   >
                     <option value="NG">🇳🇬 +234</option>
                     <option value="US">🇺🇸 +1</option>
@@ -149,7 +149,7 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Enter phone number"
-                  className="flex-1 px-4 py-2 border border-gray-300 rounded-r-md focus:ring-2 focus:ring-blue-500   focus:outline-none box-shadow-sm"
+                  className="flex-1 px-4 py-2 border border-gray-300 rounded-r-md focus:ring-2 focus:ring-blue-500 focus:outline-none box-shadow-sm min-w-0"
                   required
                 />
               </div>
