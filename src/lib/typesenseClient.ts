@@ -6,22 +6,22 @@ import TypesenseInstantSearchAdapter from 'typesense-instantsearch-adapter';
 export const typesenseClient = new Typesense.Client({
   nodes: [
     {
-    host: process.env.TYPESENSE_HOST || 'csu5x7pfmvd31yrnp-1.a1.typesense.net',
+    host: process.env.TYPESENSE_HOST || 'b6sl2ydh54p9ix1gp-1.a2.typesense.net',
       port: 443,
       protocol: process.env.TYPESENSE_PROTOCOL || 'https',
     },
   ],
-  apiKey: process.env.TYPESENSE_SEARCH_API_KEY || 'OUjytEAkXXdT9LynWIKwAjVHJQaTsvNq', // Use search-only API key
+  apiKey: process.env.TYPESENSE_SEARCH_API_KEY || 'LioNnxTS7wEWHpjqUTWQkea5Cl155opu', // Use search-only API key
   connectionTimeoutSeconds: 60,
 });
 
 // Initialize the InstantSearch adapter
 export const searchClient = new TypesenseInstantSearchAdapter({
   server: {
-    apiKey: process.env.TYPESENSE_SEARCH_API_KEY || 'OUjytEAkXXdT9LynWIKwAjVHJQaTsvNq',
+    apiKey: process.env.TYPESENSE_SEARCH_API_KEY || 'LioNnxTS7wEWHpjqUTWQkea5Cl155opu',
     nodes: [
       {
-        host: process.env.TYPESENSE_HOST || 'csu5x7pfmvd31yrnp-1.a1.typesense.net',
+        host: process.env.TYPESENSE_HOST || 'b6sl2ydh54p9ix1gp-1.a2.typesense.net',
         port: 443,
         protocol: 'https',
       },
