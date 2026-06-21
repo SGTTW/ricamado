@@ -8,12 +8,12 @@ const client = new Typesense.Client({
   nodes: [
     {
       host:
-        process.env.TYPESENSE_HOST || "dkx3i810rtsz4gy9p-1.a1.typesense.net",
+        process.env.TYPESENSE_HOST || "3naoijuq8ezh6vxmp-1.a1.typesense.net",
       port: 443,
       protocol: process.env.TYPESENSE_PROTOCOL || "https",
     },
   ],
-  apiKey: process.env.TYPESENSE_ADMIN_KEY || "VBhI8yqfyxITJ5LFzRiyKL5lNNb6MtDD",
+  apiKey: process.env.TYPESENSE_ADMIN_KEY || "iq3DfZMDOswQugTgl9f2Pg6OrbxtmQ8D",
   connectionTimeoutSeconds: 60,
 });
 
